@@ -23,7 +23,6 @@
 .layoutRight {
     position: absolute;
     width: 393px;
-    background-color: #eee;
 }
 
 /* 상단바 */
@@ -774,9 +773,16 @@ input[type="submit"]:hover {
 
 /*create-account.html*/
 
+.createAccountSection{
+    width: 100%;
+    height: 55px;
+    border-bottom: solid 1px #ddd;
+    display: flex;
+    align-items: center;
+}
+
 .before {
     /* before */
-
     position: absolute;
     width: 7px;
     height: 17px;
@@ -786,39 +792,25 @@ input[type="submit"]:hover {
 }
 
 
-.createAccount-text {
-    /* 회원가입 */
 
-    position: absolute;
-    width: 100px;
+.createAccount-text {
+    width: 100%;
     height: 26px;
-    left: 147px;
-    top: 50px;
+    text-align: center;
+}
+.createAccount-text > a {
+    display: block;
+    margin: auto;
 
     font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 29px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
+    
     color: #000000;
 }
 
-.createLine {
-    /* Line 3 */
-
-    position: absolute;
-    width: 393px;
-    height: 0px;
-    left: 0px;
-    top: 110px;
-
-    border: 1px solid #DDDDDD;
-
-}
 
 #inputNickname {
     /* Rectangle 4 */
