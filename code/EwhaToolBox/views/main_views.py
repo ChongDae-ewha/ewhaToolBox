@@ -142,13 +142,13 @@ def insert_order():
         return 500
 
 
-#제품 등록 화면    
-
+###제품 등록 화면
+    
 @bp.route("/product-register")
 def view_register():
     return render_template("product-register.html")
 
-@bp.route("/product-register/post", methods=["POST"])
+@bp.route("/product-register/submit", methods=["POST"])
 def insert_post():
     data = request.form
     if DB.insert_post(data['post_id'], data):
@@ -156,3 +156,34 @@ def insert_post():
     else:
         return 500
 
+@bp.route("/product-register/edit/<int:post_id>", methods=["GET", "POST"])
+def update_post(post_id):
+    post = DB.post_detail(post_id=post_id)
+    data = request.form
+    if DB.update_post(post_id, data):
+        return 200
+    else:
+        return 500
+
+    
+
+
+
+####제품 관리 화면
+
+@bp.route("/product-manage")
+def view_manage():
+    return render_template("product-manage.html")
+
+
+#####마이 페이지
+
+@bp.route("/mypage")
+def view_mypage():
+    return render_template("mypage.html")
+
+######오픈 디자인 등록
+
+@bp.route("/design")
+def view_design():
+    return render_template("design-register.html")

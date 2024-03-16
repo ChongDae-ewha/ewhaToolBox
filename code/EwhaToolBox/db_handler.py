@@ -49,11 +49,30 @@ class DBModule:
 
     
     ##제품 상세
-    def post_detail(self,post_id):
+    def post_detail(self, post_id):
         ref = self.db.reference('posts')
         post = ref.child(post_id).get()
         return post
     
+    ##제품 수정
+    def update_post(self, post_id, data):
+        post = {
+            "category" : data['category'],
+            "title" : data['title'],
+            "desc" : data['desc'],
+            "period_start" : data['period_start'],
+            "period_end" : data['period_end'],
+            "price" : data['price'],
+            "min_amount" : data['min_amount'],
+            "max_amount" : data['max_amount'],
+            "image_url" : data['image_url'],
+            "option_cnt" : data['option_cnt'],
+            "status" : data['status']
+        }
+        self.db.child("posts").child(post_id).update(post)
+        return True
+
+
 
     ## 공지
     def insert_notice(self, post_id, data):
