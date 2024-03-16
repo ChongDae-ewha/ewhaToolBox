@@ -417,72 +417,61 @@
 
 /* 프로필 */
 .profile{
-    display: flex;
-    box-sizing: border-box;
-    margin: 0;
-    position: absolute;
     width: 393px;
-    height: 102px;
-    left: 0px;
-    top: 55px;
-    border-bottom: 1px solid rgba(17, 17, 17, 0.0666667);
+    height: 110px;
+    padding: 10px;
+    
+    box-sizing: border-box;
+    margin-top: 10px;
+
+    display: flex;
     align-items: center;
 }
 /* 프로필사진 */
 .profile_pic{
+    display: block;
     box-sizing: border-box;
+    margin: 0px 10px;
     width: 80px;
     height: 80px;
     background: url(./img/ewhalogo.png);
 }
 /* 닉네임 */
 .nickname{
+    padding-left: 20px;
+    display: block;
+    float: left;
+    width: 150px;
+    box-sizing: border-box;
     height: 29px;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 29px;
 }
-/* 닉네임 수정 */
-.edit{
-    width: 20px;
-    height: 20px;
-    background: url(./img/edit.png);  
-}
 /* 로그아웃 버튼 */
 .logoutBtn{
     display: flex;
-    padding: 10px;
-    margin: auto;
-    margin-bottom: 10px;
-    width: 340px;
-    height: 31px;
-
-    background: #FEFEFE;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    align-items: center;
+    height: 30px;
+    position: relative;
+    top: -40px;
+    left: 40px;
 }
 .logoutBtnText{
-    display: flex;
-    align-items: center;
     font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
-    line-height: 22px;
-    
-}
-.logoutBtnTextHl{
+    line-height: 22px;  
     color: #17794A;
 }
+
 /*네비게이션바*/
 .mypageNav{
-    position: relative;
-    left: calc(50% - 370px/2 + 0.5px);
-    top:195px;
-
+    display: block;
     box-sizing: border-box;
-    margin: 0;
+    margin: auto;
     width: 393px;
     height: 50px;
     border-bottom: 1px solid rgba(17, 17, 17, 0.0666667);
@@ -510,31 +499,88 @@
     border-bottom: solid 2px #17794A;
 }
 
-/*내 공구함 상품*/
-.MypageProduct{
+/* 마이페이지 컨텐츠 */
+.MypageContent{
     box-sizing: border-box;
 
-    position: relative;
+    position: absolute;
     width: 370px;
-    height: 485px;
     left: calc(50% - 370px/2 + 0.5px);
     top:267px;
 
     background: #FEFEFE;
-    border: 1px solid #EEEEEE;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+}
+
+/* 내 총대함*/
+.manageBtn{
+    position: relative;
+    left:145px;
+    top:-55px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    width: 50px;
+    height: 25px;
+    background: #FEFEFE;
+}
+.manageBtnText{
+    display: flex;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+}
+.manageBtnTextHl{
+    width: 50px;
+    text-align: center;
+    color: #000000;
+}
+
+/* 내 디자인 */
+.MypageDesign{
+    display: inline-block;
+    margin: auto;
+    padding: 4px;
+    width: 393px;
+    box-sizing: border-box;
+    background: #FEFEFE;
+}
+
+.designBox{
+    width: 120px;
+    height: 120px;
+    padding: 4px;
+    text-align: center;
+    float: left;
+}
+.designImg{
+    width: 120px;
+    height: 120px;
+    background: url(./img/내디자인.png);
+}
+.designDeleteBtn{
+    position: relative;
+    left:100px;
+    top: -115px;
+    width: 12px;
+    height: 12px;
+    background: url(./img/삭제버튼.png);
+}
+.designRegisterBtn{
+    width: 120px;
+    height: 120px;
+    background: url(./img/이미지등록.png);
 }
 
 /* mypage.html 끝 */
 
 
 
-/* design.html */
-.design_title{
-    position: relative;
-    top: 73px;
-    height: 50px;
+/* design-register.html */
+.designTitle{
+    margin:20px 0 30px 0;
     text-align: center;
     font-family: 'Noto Sans KR';
     font-style:normal;
@@ -542,24 +588,66 @@
     font-size: 25px;
     color: #000000;
 }
-
-.design_img{
-    position: relative;
-    margin-top: 10px;
+.designInfo p{
+    margin: auto;
     width: 320px;
-    height: 320px;
-    background: url(./img/이미지등록.png);
+    font-family: 'Noto Sans KR';
+    font-style:normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+}
+.designInfo p input{
+    margin-top: 10px;
+    padding: 5px;
+    width: 310px;
+    height: 40px;
+    
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
-.design_info textarea{
-    position: relative;
+.designRegisterImg{
+    margin: 20px auto 20px auto;
+    width: 320px;
+    height: 320px;
+    background: url(./img/디자인등록.png);
+    background-repeat: no-repeat;
+}
+
+.designInfo textarea{
     margin-top: 10px;
+    padding:10px;
     font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
+    width: 300px;
+
+    resize: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.designInfo button{
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 0;
+
     width: 320px;
+    height: 50px;
+
+    background: #17794A;
+    border: 1px solid #17794A;
+    border-radius: 5px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+
+    color: #ffffff;
+    text-align: center;
 }
 /* design.html 끝 */
 

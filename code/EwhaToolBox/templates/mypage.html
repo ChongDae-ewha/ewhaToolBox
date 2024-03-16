@@ -20,28 +20,28 @@
             <!--여기에 수정하세요-->
             <div class="profile">
                 <div class="profile_pic"></div>
-                <div class="nickname">{{nickname}}<div class="edit"></div>
-                </div>
+                <div class="nickname">{{nickname}}</div>
                 <div class="logoutBtn">
-                    <div class="logoutBtnText"><span class="logoutBtnTextHl">로그아웃</div>
+                    <div class="logoutBtnText">로그아웃</div>
                 </div>
             </div>
 
+            <!-- 네비게이션바에서 내 공구함 선택했을 경우 -->
             <ul class="mypageNav">
                 <li><a class="active" href="#">내 공구함</a></li>
                 <li><a href="#">내 총대함</a></li>
                 <li><a href="#">내 디자인</a></li>
             </ul>
-            <div class="MypageProduct">
+            <div class="MypageContent">
                 <div class="ProductBox">
                     <div class="ProductImg"></div>
                     <div class="ProductDesc">
-                        <a class="ProductCat">{{학잠}}</a>
-                        <p class="Producttext">{{상품 이름}}</p>
+                        <a class="ProductCat">카테고리</a>
+                        <p class="Producttext">상품이름</p>
                         <div class="progressbarBox">
-                            <div class="attendees">{{20}}명</div>
-                            <div class="maxAttendees">/{{30}}명</div>
-                            <div class="ddayCount">{{마감까지 7일}}</div>
+                            <div class="attendees">20명</div>
+                            <div class="maxAttendees">/30명</div>
+                            <div class="ddayCount">마감까지 7일</div>
                             <div class="progressbarBg">
                                 <div class="progressbar"></div>
                             </div>
@@ -51,12 +51,12 @@
                 <div class="ProductBox">
                     <div class="ProductImg"></div>
                     <div class="ProductDesc">
-                        <a class="ProductCat">{{학잠}}</a>
-                        <p class="Producttext">{{상품 이름}}</p>
+                        <a class="ProductCat">카테고리</a>
+                        <p class="Producttext">상품 이름</p>
                         <div class="progressbarBox">
-                            <div class="attendees">{{20}}명</div>
-                            <div class="maxAttendees">/{{30}}명</div>
-                            <div class="ddayCount">{{마감까지 7일}}</div>
+                            <div class="attendees">20명</div>
+                            <div class="maxAttendees">/30명</div>
+                            <div class="ddayCount">마감까지 7일</div>
                             <div class="progressbarBg">
                                 <div class="progressbar"></div>
                             </div>
@@ -66,19 +66,95 @@
                 <div class="ProductBox">
                     <div class="ProductImg"></div>
                     <div class="ProductDesc">
-                        <a class="ProductCat">{{학잠}}</a>
-                        <p class="Producttext">{{상품 이름}}</p>
+                        <a class="ProductCat">카테고리</a>
+                        <p class="Producttext">상품 이름</p>
                         <div class="progressbarBox">
-                            <div class="attendees">{{20}}명</div>
-                            <div class="maxAttendees">/{{30}}명</div>
-                            <div class="ddayCount">{{마감까지 7일}}</div>
+                            <div class="attendees">20명</div>
+                            <div class="maxAttendees">/30명</div>
+                            <div class="ddayCount">마감까지 7일</div>
                             <div class="progressbarBg">
                                 <div class="progressbar"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
+            
+            
+            <!-- 네비게이션바에서 내 총대함 선택했을 경우 -->
+            <!-- <ul class="mypageNav">
+                <li><a href="#">내 공구함</a></li>
+                <li><a class="active" href="#">내 총대함</a></li>
+                <li><a href="#">내 디자인</a></li>
+            </ul>
+            <div class="MypageContent">
+                <div class="ProductBox">
+                    <div class="ProductImg"></div>
+                    <div class="ProductDesc">
+                        <a class="ProductCat">카테고리</a>
+                        <p class="Producttext">상품이름</p>
+                        <div class="manageBtn">
+                            <div class="manageBtnText"><span class="manageBtnTextHl">관리</div>
+                        </div>
+                        <div class="progressbarBox">
+                            <div class="attendees">20명</div>
+                            <div class="maxAttendees">/30명</div>
+                            <div class="ddayCount">마감까지 7일</div>
+                            <div class="progressbarBg">
+                                <div class="progressbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ProductBox">
+                    <div class="ProductImg"></div>
+                    <div class="ProductDesc">
+                        <a class="ProductCat">카테고리</a>
+                        <p class="Producttext">상품이름</p>
+                        <div class="manageBtn">
+                            <div class="manageBtnText"><span class="manageBtnTextHl">관리</div>
+                        </div>
+                        <div class="progressbarBox">
+                            <div class="attendees">20명</div>
+                            <div class="maxAttendees">/30명</div>
+                            <div class="ddayCount">마감까지 7일</div>
+                            <div class="progressbarBg">
+                                <div class="progressbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            
+
+
+            <!-- 네비게이션바에서 내 디자인 선택했을 경우 -->
+            <!-- <ul class="mypageNav">
+                <li><a href="#">내 공구함</a></li>
+                <li><a href="#">내 총대함</a></li>
+                <li><a class="active" href="#">내 디자인</a></li>
+            </ul>
+            <div class="MypageDesign">
+                <div class="designBox">
+                    <div class="designImg"></div>
+                    <div class="designDeleteBtn"></div>
+                </div>
+                <div class="designBox">
+                    <div class="designImg"></div>
+                    <div class="designDeleteBtn"></div>
+                </div>
+                <div class="designBox">
+                    <div class="designImg"></div>
+                    <div class="designDeleteBtn"></div>
+                </div>
+                <div class="designBox">
+                    <div class="designImg"></div>
+                    <div class="designDeleteBtn"></div>
+                </div>
+                <div class="designBox">
+                    <div class="designRegisterBtn"></div>
+                </div>
+            </div> -->
         </div>
     </div>
 </body>
