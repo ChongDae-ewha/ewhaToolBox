@@ -1,0 +1,26 @@
+/* 공통 CSS */
+.layoutWrap{
+    display: flex;
+    height: 100vh;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+@media screen and (min-width: 1000px){
+    .layoutLeft {
+        display: block;
+        position: relative;
+        width: 385px;
+        margin-right: 60px;
+    }
+}
+.layoutLeft{
+    display: none;
+    background-color: #333;
+}
+.layoutRight{
+    width: 393px;
+    background-color: #999;
+}
+
+/* index.html */
+
