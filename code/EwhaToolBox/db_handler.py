@@ -9,7 +9,7 @@ class DBModule:
 
         self.firebse = pyrebase.initialize_app(config)
         self.db=self.firebse.database()
-
+    
     
     ## 사용자
     def insert_user(self, user_id, data):
@@ -24,69 +24,36 @@ class DBModule:
         self.db.child("user").child(user_id).set(user)
         return True
     
-    def get_user(self, user_id):
-        pass
-    
-    def signin(self, id, pwd):
-        pass
-
-    def signup(self, id, pwd):
-        pass
-
-    ## 게시글
-    def insert_post(self, post_id, data):
-        post = {
-            "post_id" : data['post_id'],
-            "writer_id" : data['writer_id'],
-            "category" : data['category'],
-            "title" : data['title'],
-            "desc" : data['desc'],
-            "period_start" : data['period_start'],
-            "period_end" : data['period_end'],
-            "price" : data['price'],
-            "min_amount" : data['min_amount'],
-            "max_amount" : data['max_amount'],
-            "image_url" : data['image_url'],
-            "option_cnt" : data['option_cnt'],
-            "status" : data['status']
-        }
-        self.db.child("post").child(post_id).set(post)
-        return True
-    
-    def user_duplicate_check(self, user_id):
+   
+    def signin(self, user_id, pwd):
         users = self.db.child("user").get()
         for user in users.each():
-            if (user.key() == user_id):
-                return False
-        return True
+            if user.key() == user_id:  # user_id를 문자열로 그대로 사용하여 비교
+                if user.val()['pw'] == pwd:
+                    print("로그인 성공")
+                    return True
+        
+        print("로그인 실패")
+        return False
+
+    ## index.html 
+    def get_ongoing(self):
+        ref = self.db.reference('posts')
     
-    def write_post(self):
-        pass
+    # 레퍼런스에서 모든 게시글을 가져와서 반환
+        posts = ref.get()
+        return posts
+    
+    def get_open_design(self):
+        ref = self.db.reference('designs')
 
-    def post_list(self):
-        pass
-
+    
+    ##제품 상세
     def post_detail(self,post_id):
-        pass
-
-
-    ## 작성자
-    def insert_writer(self, writer_id, data):
-        writer = {
-            "writer_id" : data['writer_id'],
-            "post_id" : data['post_id'],
-            "form_url" : data['form_url']
-        }
-        self.db.child("writer").child(writer_id).set(writer)
-        return True
+        ref = self.db.reference('posts')
+        post = ref.child(post_id).get()
+        return post
     
-    def writer_duplicate_check(self, writer_id):
-        writers = self.db.child("writer").get()
-        for writer in writers.each():
-            if (writer.key() == writer_id):
-                return False
-        return True
-
 
     ## 공지
     def insert_notice(self, notice_id, data):
@@ -96,11 +63,11 @@ class DBModule:
             "writer_id" : data['writer_id'],
             "notice_desc" : data['notice_desc']
         }
-        self.db.child("notice").child(notice_id).set(notice)
+        self.db.child("posts").child("notice").child(notice_id).set(notice)
         return True
     
     def notice_duplicate_check(self, notice_id):
-        notices = self.db.child("notice").get()
+        notices = self.db.child("posts").child("notice").get()
         for notice in notices.each():
             if (notice.key() == notice_id):
                 return False
@@ -165,6 +132,66 @@ class DBModule:
         return True
 
 
+
+
+
+
+
+    def insert_post(self, post_id, data):
+        post = {
+            "post_id" : data['post_id'],
+            "writer_id" : data['writer_id'],
+            "category" : data['category'],
+            "title" : data['title'],
+            "desc" : data['desc'],
+            "period_start" : data['period_start'],
+            "period_end" : data['period_end'],
+            "price" : data['price'],
+            "min_amount" : data['min_amount'],
+            "max_amount" : data['max_amount'],
+            "image_url" : data['image_url'],
+            "option_cnt" : data['option_cnt'],
+            "status" : data['status']
+        }
+        self.db.child("post").child(post_id).set(post)
+        return True
+    
+    def user_duplicate_check(self, user_id):
+        users = self.db.child("user").get()
+        for user in users.each():
+            if (user.key() == user_id):
+                return False
+        return True
+    
+    def write_post(self):
+        pass
+
+   
+
+    
+
+
+    ## 작성자
+    def insert_writer(self, writer_id, data):
+        writer = {
+            "writer_id" : data['writer_id'],
+            "post_id" : data['post_id'],
+            "form_url" : data['form_url']
+        }
+        self.db.child("writer").child(writer_id).set(writer)
+        return True
+    
+    def writer_duplicate_check(self, writer_id):
+        writers = self.db.child("writer").get()
+        for writer in writers.each():
+            if (writer.key() == writer_id):
+                return False
+        return True
+
+
+    
+
+
     ## 디자인
     def insert_design(self, design_id, data):
         design = {
@@ -207,10 +234,10 @@ class DBModule:
 
 
     #데이터 쓰기 체크 
-    def write_data(self, data):
-        # Firebase 데이터베이스에 데이터 쓰기
-        self.db.child("example").set(data)
-        print("데이터 쓰기가 완료되었습니다.")
+    # def write_data(self, data):
+    #     # Firebase 데이터베이스에 데이터 쓰기
+    #     self.db.child("example").set(data)
+    #     print("데이터 쓰기가 완료되었습니다.")
 
 
 
