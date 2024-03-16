@@ -3,8 +3,10 @@ import sys
 import json
 
 from flask import Flask, jsonify, request, Blueprint,redirect, url_for
+from db_handler import DBModule
 
-bp=Blueprint('main',__name__,url_prefix='/')
+bp = Blueprint('main',__name__,url_prefix='/')
+DB = DBModule()
 
 
 @bp.route("/")
@@ -31,7 +33,10 @@ def reg_user_submit():
 @bp.route("/user/signup/post", methods=["POST"])
 def reg_user_post():
     data = request.form
-    return render_template("signup_result.html", data=data)
+    if DB.signup(data['user_id'], data):
+        return render_template("signup_result.html", data=data)
+    else:
+        return render_template("signup_error.html")
 
 
 @bp.route("/user/signin")
