@@ -18,9 +18,57 @@
     background-color: #333;
 }
 .layoutRight{
+    position: absolute;
     width: 393px;
-    background-color: #999;
+    min-height: 800px;
+    background-color: #eee;
 }
+
+/* header section */
+.headerSection{
+    box-sizing: border-box;
+    position: absolute;
+    width: 393px;
+    height: 55px;
+    left: 0px;
+    top: 0px;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.133333);
+}
+
+
+/* mypage */
+.mypage{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 358px;
+    top: 17px;
+    background: url(./img/mypage.png);
+}
+
+
+/* noti */
+.noti{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 326px;
+    top: 17px;
+    background: url(./img/noti.png);
+}
+
+/* 로고 */
+.logo{
+    position: absolute;
+    width: 128px;
+    height: 30px;
+    left: 14px;
+    top: 12px;
+    background: url(./img/logo.png);
+}
+
+
+/* index.html */
 
 /* index.html */
 
