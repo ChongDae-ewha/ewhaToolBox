@@ -1,1 +1,9 @@
+__pycache__/
+*.pyc
+./EwhaToolBox/auth/client_secret.json
+client_secret.json
+quickstart.py
+./EwhaToolbox/quickstart.py
+./EwhaToolbox/test.py
 myenv3.10/
+./EwhaToolbox/myenv3.10/
