@@ -427,7 +427,7 @@
 .design_info textarea{
     position: relative;
     margin-top: 10px;
-    rows="3";
+    rows:"3";
     font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: 500;
