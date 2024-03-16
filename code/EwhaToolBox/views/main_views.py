@@ -86,22 +86,22 @@ def name_veri():
 def view_index():
     return render_template("index.html")
 
-@bp.route("/index/ongoing",methods=["GET"])
+@bp.route("/index/ongoing", methods=["GET"])
 def ongoing():
     return json(DB.get_ongoing()),200
 
-@bp.route("/index/open-design",methods=["GET"])
+@bp.route("/index/open-design", methods=["GET"])
 def open_design():
     return json(DB.get_open_design()),200
 
 
 ##제품 상세 화면
 
-@bp.route("/product-detail/<int:post_id>",methods=["GET"])
+@bp.route("/product-detail/<int:post_id>", methods=["GET"])
 def view_post(post_id):
     return render_template("post.html", post=DB.post_detail(post_id))
 
-@bp.route("/product-detail/notice",methods=["POST"])
+@bp.route("/product-detail/notice", methods=["POST"])
 def insert_notice():
     data = request.form
     if DB.insert_notice(data['post_id'], data):
@@ -109,7 +109,7 @@ def insert_notice():
     else:
         return 500
 
-@bp.route("/product-detail/review",methods=["POST"])
+@bp.route("/product-detail/review", methods=["POST"])
 def insert_review():
     data = request.form
     if DB.insert_review(data['post_id'], data):
@@ -117,7 +117,7 @@ def insert_review():
     else:
         return 500
 
-@bp.route("/product-detail/qna",methods=["POST"])
+@bp.route("/product-detail/qna", methods=["POST"])
 def insert_question():
     data = request.form
     if DB.insert_qna(data['post_id'], data):
@@ -125,7 +125,7 @@ def insert_question():
     else:
         return 500
     
-@bp.route("/product-datil/answer",methods=["POST"])
+@bp.route("/product-datil/answer", methods=["POST"])
 def insert_answer():
     data = request.form
     if DB.insert_answer(data['post_id'], data):
@@ -133,7 +133,7 @@ def insert_answer():
     else:
         return 500
 
-@bp.route("/product-detail/order",methods=["POST"])
+@bp.route("/product-detail/order", methods=["POST"])
 def insert_order():
     data = request.form
     if DB.insert_order(data['post_id'], data):
