@@ -2,7 +2,7 @@ import io
 import sys
 import json
 
-from flask import Flask, jsonify, request, Blueprint,redirect, url_for
+from flask import Flask,  render_template, jsonify, request, Blueprint, redirect, url_for
 from db_handler import DBModule
 
 bp = Blueprint('main',__name__,url_prefix='/')
