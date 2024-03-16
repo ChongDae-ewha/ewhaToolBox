@@ -88,11 +88,11 @@ def view_index():
 
 @bp.route("/index/ongoing", methods=["GET"])
 def ongoing():
-    return json(DB.get_ongoing()),200
+    return json(DB.get_ongoing()), 200
 
 @bp.route("/index/open-design", methods=["GET"])
 def open_design():
-    return json(DB.get_open_design()),200
+    return json(DB.get_open_design()), 200
 
 
 ##제품 상세 화면
@@ -140,9 +140,19 @@ def insert_order():
         return 200
     else:
         return 500
-    
+
+
+#제품 등록 화면    
 
 @bp.route("/product-register")
 def view_register():
     return render_template("product-register.html")
+
+@bp.route("/product-register/post", methods=["POST"])
+def insert_post():
+    data = request.form
+    if DB.insert_post(data['post_id'], data):
+        return 200
+    else:
+        return 500
 
