@@ -9,19 +9,36 @@ bp = Blueprint('main',__name__,url_prefix='/')
 DB = DBModule()
 
 
-@bp.route("/")
-def index():
-    return "index"
 
-@bp.route("/user")
-def user():
-    return ""
 
-@bp.route("/user/signup")
-def view_signup():
-    return render_template("signup.html")
+#로그인 화면
+@bp.route("/login")
+def view_login():
+    return render_template("login.html")
 
-@bp.route("/user/signup/submit")
+
+@bp.route("/user/signin", methods=['POST'])
+def signin():
+    # POST 요청으로부터 사용자 정보 받아오기
+    user_id = request.form['user_id']
+    pwd = request.form['pwd']
+
+    # DB_Module의 signin 메서드 호출하여 사용자 인증 처리
+    authenticated = DBModule.signin(user_id, pwd)
+
+    if authenticated:
+        return "Login successful", 200  # 로그인 성공 시 응답
+    else:
+        return "Invalid username or password", 401 # 로그인 실패 시 응답
+    
+#회원가입 화면
+
+@bp.route("/create-account")
+def create_account():
+    return render_template("create-account.html")
+
+    
+@bp.route("/user/signup", methods=["POST"])
 def reg_user_submit():
     user_id = request.args.get("user_id")
     pw = request.args.get("pw")
@@ -30,15 +47,49 @@ def reg_user_submit():
     phone = request.args.get("phone")
     address = request.args.get("address")
 
-@bp.route("/user/signup/post", methods=["POST"])
-def reg_user_post():
-    data = request.form
-    if DB.signup(data['user_id'], data):
-        return render_template("signup_result.html", data=data)
+    success = DBModule.insert_user(user_id, {
+        "user_id": user_id,
+        "pw": pw,
+        "nickname": nickname,
+        "email": email,
+        "phone": phone,
+        "address": address
+    })
+
+    # 회원가입 성공 여부에 따른 응답 반환
+    if success:
+        return 200
     else:
-        return render_template("signup_error.html")
+        return 500
+    
+
+@bp.route("/user/card-veri", methods=["POST"])
+def card_veri():
+    pass
+
+@bp.route("/user/name-veri", methods=["POST"])
+def name_veri():
+    pass
+
+# @bp.route("/user/signup/post", methods=["POST"])
+# def reg_user_post():
+#     data = request.form
+#     if DB.signup(data['user_id'], data):
+#         return render_template("signup_result.html", data=data)
+#     else:
+#         return render_template("signup_error.html")
 
 
-@bp.route("/user/signin")
-def view_signin():
-    return render_template("signin.html")
+#홈 화면
+
+@bp.route("/index")
+def view_index():
+    return render_template("index.html")
+
+@bp.route("/index/ongoing",methods=["GET"])
+def ongoing():
+    return json(DB.get_ongoing()),200
+
+@bp.route("/index/open-design",methods=["GET"])
+def open_design():
+    return json(DB.get_open_design()),200
