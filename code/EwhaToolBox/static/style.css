@@ -366,6 +366,50 @@
 .mydesignOpenBtnTextHl{
     color: #17794A;
 }
+
+.totalSold{
+    width: 195px;
+    height: 24px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #000000;
+
+}
+.totalSoldHl{
+    font-size: 18px;
+    color: #17794A;
+}
+.opendesignOpenBtn{
+    width: 120px;
+    height: 25px;
+    float: right;
+    
+    background: #17794A;
+    border-radius: 15px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+
+    text-align: center;
+    border: none;
+    color: #FFFFFF;
+}
+.opendesignOpenBtn > a{
+    display: inline-block;
+    align-items: center;
+    margin: auto;
+}
+
+
 /* index.html 끝 */
 
 /* mypage.html */
