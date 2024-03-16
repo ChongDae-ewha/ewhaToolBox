@@ -1,11 +1,12 @@
 /* 공통 CSS */
-.layoutWrap{
+.layoutWrap {
     display: flex;
     height: 100vh;
     -webkit-box-pack: center;
     justify-content: center;
 }
-@media screen and (min-width: 1000px){
+
+@media screen and (min-width: 1000px) {
     .layoutLeft {
         display: block;
         position: relative;
@@ -13,11 +14,13 @@
         margin-right: 60px;
     }
 }
-.layoutLeft{
+
+.layoutLeft {
     display: none;
     background-color: #333;
 }
-.layoutRight{
+
+.layoutRight {
     position: absolute;
     width: 393px;
     min-height: 800px;
@@ -25,7 +28,7 @@
 }
 
 /* header section */
-.headerSection{
+.headerSection {
     box-sizing: border-box;
     position: absolute;
     width: 393px;
@@ -37,7 +40,7 @@
 
 
 /* mypage */
-.mypage{
+.mypage {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -48,7 +51,7 @@
 
 
 /* noti */
-.noti{
+.noti {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -58,7 +61,7 @@
 }
 
 /* 로고 */
-.logo{
+.logo {
     position: absolute;
     width: 128px;
     height: 30px;
@@ -72,3 +75,706 @@
 
 /* index.html */
 
+/*login.html*/
+
+.login-text {
+    /* 로그인 */
+
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    left: calc(50% - 160px/2 + 35px);
+    top: 100px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+
+
+}
+
+input[type="email"] {
+    /* Rectangle 4 */
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 315px;
+    height: 60px;
+    left: 39px;
+    top: 221px;
+
+    background: #FFFFFF;
+    border: 1px solid #696969;
+    border-radius: 5px;
+
+}
+
+input[type="email"] {
+    /* 이메일 주소 */
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: rgba(86, 85, 85, 0.68);
+
+}
+
+input[type="password"] {
+    /* Rectangle 5 */
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 315px;
+    height: 60px;
+    left: 39px;
+    top: 298px;
+
+    background: #FFFFFF;
+    border: 1px solid #696969;
+    border-radius: 5px;
+
+}
+
+input[type="password"] {
+    /* 비밀번호 */
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: rgba(86, 85, 85, 0.68);
+
+}
+
+input[type="submit"] {
+
+    /* Rectangle 6 */
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 315px;
+    height: 60px;
+    left: 38px;
+    top: 385px;
+
+    background: #17794A;
+    border: 1px solid #17794A;
+    border-radius: 5px;
+
+
+}
+
+#email::placeholder {
+    /* 이메일 주소 */
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: rgba(86, 85, 85, 0.68);
+
+}
+
+#password::placeholder {
+    /* 이메일 주소 */
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: rgba(86, 85, 85, 0.68);
+
+}
+
+input[type="submit"] {
+    /* 로그인 */
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    /* identical to box height */
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.95);
+    text-align: center;
+
+}
+
+input[type="submit"]:hover {
+    background-color: #878a8d;
+    /* Darker background color on hover */
+}
+
+.signup-button {
+    /* Rectangle 7 */
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 315px;
+    height: 60px;
+    left: 38px;
+    top: 462px;
+
+    background: #17794A;
+    border: 1px solid #17794A;
+    border-radius: 5px;
+
+}
+
+.signup-button {
+    /* 회원가입 */
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    /* identical to box height */
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+}
+
+.signup-button:hover {
+    background-color: #878a8d;
+    /* 호버시 배경 색상 변경 */
+}
+
+/*create-account.html*/
+
+.before {
+    /* before */
+
+    position: absolute;
+    width: 7px;
+    height: 17px;
+    left: 11px;
+    top: 76px;
+    background: url(./img/before.png);
+}
+
+
+.createAccount-text {
+    /* 회원가입 */
+
+    position: absolute;
+    width: 100px;
+    height: 26px;
+    left: 147px;
+    top: 50px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.createLine {
+    /* Line 3 */
+
+    position: absolute;
+    width: 393px;
+    height: 0px;
+    left: 0px;
+    top: 110px;
+
+    border: 1px solid #DDDDDD;
+
+}
+
+#inputNickname {
+    /* Rectangle 4 */
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 350px;
+    height: 30px;
+    left: 20px;
+    top: 165px;
+
+    background: #FFFFFF;
+    border: 1px solid #696969;
+    border-radius: 5px;
+
+}
+
+.nickname-text {
+    /* 닉네임 */
+
+    position: absolute;
+    width: 253px;
+    height: 29.36px;
+    left: 20px;
+    top: 110px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+}
+
+.email-text {
+    /* 이메일 */
+
+    position: absolute;
+    width: 253px;
+    height: 29.36px;
+    left: 20px;
+    top: 190px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+}
+
+#inputEmail {
+    /* Rectangle 4 */
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 350px;
+    height: 30px;
+    left: 20px;
+    top: 245px;
+
+    background: #FFFFFF;
+    border: 1px solid #696969;
+    border-radius: 5px;
+
+}
+
+.phonenum-text {
+    /* 연락처 */
+
+    position: absolute;
+    width: 253px;
+    height: 29.36px;
+    left: 20px;
+    top: 270px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+
+
+}
+
+#inputPhonenum {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 350px;
+    height: 30px;
+    left: 20px;
+    top: 325px;
+
+    background: #FFFFFF;
+    border: 1px solid #696969;
+    border-radius: 5px;
+
+}
+
+.address-text {
+    /* 주소 */
+
+    position: absolute;
+    width: 253px;
+    height: 29.36px;
+    left: 20px;
+    top: 350px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+
+
+}
+
+#sample6_address {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 350px;
+    height: 30px;
+    left: 20px;
+    top: 400px;
+
+    background: #FFFFFF;
+    border: 1px solid #696969;
+    border-radius: 5px;
+
+
+    /* 배송받을 주소를 검색해주세요. */
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: rgba(86, 85, 85, 0.68);
+}
+
+#sample6_detailAddress {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 255px;
+    height: 30px;
+    left: 20px;
+    top: 470px;
+
+    background: #FFFFFF;
+    border: 1px solid #696969;
+    border-radius: 5px;
+
+
+    /* 배송받을 주소를 검색해주세요. */
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: rgba(86, 85, 85, 0.68);
+
+}
+
+#sample6_postcode {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 255px;
+    height: 30px;
+    left: 20px;
+    top: 435px;
+
+    background: #FFFFFF;
+    border: 1px solid #696969;
+    border-radius: 5px;
+
+
+    /* 배송받을 주소를 검색해주세요. */
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: rgba(86, 85, 85, 0.68);
+
+}
+
+
+#sample6_extraAddress {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 255px;
+    height: 30px;
+    left: 20px;
+    top: 505px;
+
+    background: #FFFFFF;
+    border: 1px solid #696969;
+    border-radius: 5px;
+
+
+    /* 배송받을 주소를 검색해주세요. */
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: rgba(86, 85, 85, 0.68);
+
+}
+
+#sample6_button {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 90px;
+    height: 30px;
+    left: 280px;
+    top: 435px;
+
+    background: #FFFFFF;
+    border: 1px solid #696969;
+    border-radius: 5px;
+
+
+    /* 배송받을 주소를 검색해주세요. */
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: rgba(86, 85, 85, 0.68);
+
+}
+
+.password-text {
+
+    position: absolute;
+    width: 253px;
+    height: 29.36px;
+    left: 20px;
+    top: 530px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+}
+
+#inputPassword {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 350px;
+    height: 30px;
+    left: 20px;
+    top: 585px;
+
+    background: #FFFFFF;
+    border: 1px solid #696969;
+    border-radius: 5px;
+}
+
+#inputPassword2 {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 350px;
+    height: 30px;
+    left: 20px;
+    top: 620px;
+
+    background: #FFFFFF;
+    border: 1px solid #696969;
+    border-radius: 5px;
+}
+
+
+.school-button {
+    /* Rectangle 6 */
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    left: 20px;
+    top: 670px;
+
+    background: #17794A;
+    border: 1px solid #17794A;
+    border-radius: 5px;
+
+
+}
+
+.school-button {
+    /* 회원가입 */
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    /* identical to box height */
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+}
+
+.school-button:hover {
+    background-color: #878a8d;
+    /* 호버시 배경 색상 변경 */
+}
+
+.realname-button {
+    /* Rectangle 6 */
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    left: 210px;
+    top: 670px;
+
+    background: #17794A;
+    border: 1px solid #17794A;
+    border-radius: 5px;
+
+
+}
+
+.realname-button {
+    /* 회원가입 */
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    /* identical to box height */
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.realname-button:hover {
+    background-color: #878a8d;
+    /* 호버시 배경 색상 변경 */
+}
+
+.create-button {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 350px;
+    height: 40px;
+    left: 20px;
+    top: 735px;
+
+    background: #777777;
+    border: 1px solid #777777;
+    border-radius: 5px;
+
+
+}
+
+.create-button {
+    /* 회원가입 */
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    /* identical to box height */
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+}
