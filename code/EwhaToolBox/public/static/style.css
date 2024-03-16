@@ -25,46 +25,57 @@
     width: 393px;
 }
 
+@font-face {
+    font-family: 'JeonjuCraftGoR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/JeonjuCraftGoR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /* 상단바 */
 
 /* header section */
 .headerSection{
+    display: flex;
+    align-items: center;
     box-sizing: border-box;
     width: 393px;
-    height: 55px;
+    height: 50px;
+    padding: 2px 4px;
     border-bottom: 1px solid rgba(17, 17, 17, 0.133333);
 }
 
+/* noti */
+.noti {
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+}
 
 /* mypage */
 .mypage {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 358px;
-    top: 17px;
-    background: url(./img/mypage.png);
+    width: 25px;
+    height: 25px;
 }
 
 
-/* noti */
-.noti {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 326px;
-    top: 17px;
-    background: url(./img/noti.png);
-}
+
 
 /* 로고 */
+.logoBox{
+    display: flex;
+    align-items: center;
+}
 .logo {
-    position: absolute;
-    width: 128px;
-    height: 30px;
-    left: 14px;
-    top: 12px;
-    background: url(./img/logo.png);
+    width: 26px;
+    height: 26px;
+    margin-right: 3px;
+}
+.logoText{
+    font-family: 'JeonjuCraftGoR';
+    font-weight: 900;
+    font-size: 18px;
 }
 
 
