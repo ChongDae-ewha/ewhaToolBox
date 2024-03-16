@@ -2,19 +2,20 @@ import io
 import sys
 import json
 
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, Blueprint,redirect, url_for
 
-app = Flask(__name__)
+bp=Blueprint('main',__name__,url_prefix='/')
 
-@app.route("/")
-def home():
-    return "Hello World"
 
-@app.route("/user")
+@bp.route("/")
+def index():
+    return "index"
+
+@bp.route("/user")
 def user():
     return ""
 
-@app.route("/user/signup", methods=['POST'])
+@bp.route("/user/signup", methods=['POST'])
 def reg_user():
     user_id = request.args.get('user_id')
     pw = request.args.get('pw')
@@ -23,10 +24,5 @@ def reg_user():
     phone = request.args.get('phone')
     address = request.args.get('address')
 
-@app.route("/user/signin")
-def login():
-    return ""
 
 
-if __name__ == "main":
-    app.run(host = "0.0.0.0")
