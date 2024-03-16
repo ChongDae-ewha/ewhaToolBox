@@ -14,8 +14,17 @@ class DBModule:
     def login(self,id,pwd):
         pass
 
-    def signin(self,id,pwd,name,email):
-        pass
+    def signup(self, user_id, data):
+        user = {
+            "user_id" : data['user_id'],
+            "pw" : data['pw'],
+            "nickname" : data['nickname'],
+            "email" : data['email'],
+            "phone" : data['phone'],
+            "address" : data['address']
+            }
+        self.db.child("user").child(user_id).set(user)
+        return True
 
     def write_post(self,user,contents):
         pass
