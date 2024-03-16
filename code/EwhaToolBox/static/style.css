@@ -1408,3 +1408,668 @@ input[type="submit"]:hover {
     border-bottom: solid 2px #17794A;
 }
 
+
+
+/*product-register.html*/
+
+.categorySection{
+    width: 100%;
+    height: 95px;
+    display: flex;
+    align-items: center;
+}
+
+.category-text {
+
+    position: absolute;
+    width: 253px;
+    height: 29.36px;
+    left: 20px;
+    top: 60px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+#category{
+    position: absolute;
+    width: 350px;
+    height: 29.36px;
+    left: 20px;
+    top: 115px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+
+.titleSection{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.title-text {
+
+    position: absolute;
+    width: 253px;
+    height: 29.36px;
+    left: 20px;
+    top: 140px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+#inputTitle{
+    position: absolute;
+    width: 350px;
+    height: 26px;
+    left: 20px;
+    top: 195px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.summarySection{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.summary-text {
+
+    position: absolute;
+    width: 253px;
+    height: 29.36px;
+    left: 20px;
+    top: 220px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+#inputSummary{
+    position: absolute;
+    width: 350px;
+    height: 26px;
+    left: 20px;
+    top: 275px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+
+.periodSection{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+
+.period-text {
+
+    position: absolute;
+    width: 253px;
+    height: 29.36px;
+    left: 20px;
+    top: 300px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+#year{
+    position: absolute;
+    width: 70px;
+    height: 26px;
+    left: 20px;
+    top: 355px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+#month{
+    position: absolute;
+    width: 70px;
+    height: 26px;
+    left: 100px;
+    top: 355px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+#day{
+    position: absolute;
+    width: 70px;
+    height: 26px;
+    left: 180px;
+    top: 355px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+.from-text {
+
+    position: absolute;
+    width: 253px;
+    height: 29.36px;
+    left: 260px;
+    top: 335px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+
+#year2{
+    position: absolute;
+    width: 70px;
+    height: 26px;
+    left: 20px;
+    top: 390px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+#month2{
+    position: absolute;
+    width: 70px;
+    height: 26px;
+    left: 100px;
+    top: 390px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+#day2{
+    position: absolute;
+    width: 70px;
+    height: 26px;
+    left: 180px;
+    top: 390px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+.until-text {
+
+    position: absolute;
+    width: 253px;
+    height: 29.36px;
+    left: 260px;
+    top: 370px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+
+.priceSection{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.price-text {
+
+    position: absolute;
+    width: 253px;
+    height: 29.36px;
+    left: 20px;
+    top: 410px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+#inputPrice{
+    position: absolute;
+    width: 350px;
+    height: 26px;
+    left: 20px;
+    top: 460px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+
+.amountSection{
+    width: 150%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.minamount-text {
+
+    position: absolute;
+    width: 253px;
+    height: 29.36px;
+    left: 20px;
+    top: 490px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+#inputMinAmount{
+    position: absolute;
+    width: 150px;
+    height: 26px;
+    left: 20px;
+    top: 540px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.maxamount-text {
+
+    position: absolute;
+    width: 253px;
+    height: 29.36px;
+    left: 220px;
+    top: 490px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+#inputMaxAmount{
+    position: absolute;
+    width: 150px;
+    height: 26px;
+    left: 220px;
+    top: 540px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+
+.imageSection{
+    width: 150%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.image-text {
+
+    position: absolute;
+    width: 253px;
+    height: 29.36px;
+    left: 20px;
+    top: 565px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+#getImage_button{
+    position: absolute;
+    width: 150px;
+    height: 26px;
+    left: 20px;
+    top: 615px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+
+.addSection{
+    width: 120%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.add-text {
+
+    position: absolute;
+    width: 253px;
+    height: 29.36px;
+    left: 20px;
+    top: 635px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+#inputAdd{
+    position: absolute;
+    width: 260px;
+    height: 26px;
+    left: 20px;
+    top: 685px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.trashButton {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 310px;
+    top: 690px;
+}
+
+.plusButton {
+    position: absolute;
+    width: 15px;
+    height: 15px;   
+    left: 350px;
+    top: 690px;
+}
+
+#inputAdddetail{
+    position: absolute;
+    width: 150px;
+    height: 26px;
+    left: 20px;
+    top: 725px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.trashButton2 {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 200px;
+    top: 730px;
+}
+
+.plusButton2 {
+    position: absolute;
+    width: 15px;
+    height: 15px;   
+    left: 240px;
+    top: 730px;
+}
+
+.conditionSection{
+    width: 150%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.condition-text {
+
+    position: absolute;
+    width: 253px;
+    height: 29.36px;
+    left: 20px;
+    top: 750px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+#condition{
+    position: absolute;
+    width: 350px;
+    height: 26px;
+    left: 20px;
+    top: 800px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.registrationSection{
+    width: 150%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.registration-button {
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 350px;
+    height: 40px;
+    left: 20px;
+    top: 855px;
+
+    background: #17794A;
+    border: 1px solid #17794A;
+    border-radius: 5px;
+
+
+}
+
+.registration-button {
+    /* 회원가입 */
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    /* identical to box height */
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+.registration-button:hover {
+    background-color: #878a8d;
+    /* 호버시 배경 색상 변경 */
+}
+
+/*product-register.html 끝*/
