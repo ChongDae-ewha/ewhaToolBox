@@ -638,7 +638,7 @@
 }
 .designInfo button{
     display: block;
-    margin: 20px auto 0 auto;
+    margin: 20px auto 20px auto;
     padding: 0;
 
     width: 320px;
@@ -656,7 +656,7 @@
     color: #ffffff;
     text-align: center;
 }
-/* design.html 끝 */
+/* design-register.html 끝 */
 
 
 /*login.html*/
