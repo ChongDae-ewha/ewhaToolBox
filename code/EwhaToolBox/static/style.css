@@ -420,7 +420,7 @@
     box-sizing: border-box;
     margin: 0;
     position: absolute;
-    width: 339px;
+    width: 393px;
     height: 102px;
     left: 0px;
     top: 55px;
@@ -430,44 +430,83 @@
 /* 프로필사진 */
 .profile_pic{
     box-sizing: border-box;
-    position: absolute;
     width: 80px;
     height: 80px;
-    left: 28px;
-    top: 90px;
     background: url(./img/ewhalogo.png);
 }
 /* 닉네임 */
 .nickname{
-    position: absolute;
     height: 29px;
-    left: 141px;
-    top: 101px;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 29px;
 }
-
-/* icon "edit" */
+/* 닉네임 수정 */
 .edit{
-    position:relative;
     width: 20px;
     height: 20px;
-    left: 5px;
-    top: 5px;
     background: url(./img/edit.png);  
 }
-/* 로그아웃 */
-.logout{
-    position: absolute;
-    height: 19px;
-    left: 319px;
-    top: 68px;   
+/* 로그아웃 버튼 */
+.logoutBtn{
+    display: flex;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 340px;
+    height: 31px;
+
+    background: #FEFEFE;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.logoutBtnText{
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: 500;
-    font-size: 13px;
-    line-height: 19px;
+    font-size: 15px;
+    line-height: 22px;
+    
+}
+.logoutBtnTextHl{
+    color: #17794A;
+}
+/*네비게이션바*/
+.mypageNav{
+    position: relative;
+    left: calc(50% - 370px/2 + 0.5px);
+    top:195px;
+
+    box-sizing: border-box;
+    margin: 0;
+    width: 393px;
+    height: 50px;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.0666667);
+    align-items: center;
+}
+.mypageNav > li{
+    display: block;
+    float: left;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    align-items: center;
+    text-align: center;
+}
+.mypageNav a{
+    display: block;
+    color: #777;
+    padding: 10px;
+    text-decoration: none;
+}
+.mypageNav .active{
+    color: #17794A;
+    border-bottom: solid 2px #17794A;
 }
 
 /*내 공구함 상품*/
@@ -478,7 +517,7 @@
     width: 370px;
     height: 485px;
     left: calc(50% - 370px/2 + 0.5px);
-    top:100px;
+    top:267px;
 
     background: #FEFEFE;
     border: 1px solid #EEEEEE;
