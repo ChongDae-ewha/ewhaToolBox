@@ -2,7 +2,7 @@ import pyrebase
 import json
 
 class DBHandler:
-    def __init__(self);
+    def __init__(self):
         with open('./authentication/firebase_auth.json') as f:
             config = json.load(f)
 
