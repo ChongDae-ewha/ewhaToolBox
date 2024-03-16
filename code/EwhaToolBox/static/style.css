@@ -20,9 +20,10 @@
 .layoutRight{
     position: absolute;
     width: 393px;
-    min-height: 800px;
     background-color: #eee;
 }
+
+/* 상단바 */
 
 /* header section */
 .headerSection{
@@ -70,7 +71,371 @@
 
 /* index.html */
 
-/* index.html */
+/* nav */
+.indexNav{
+    display: flex;
+    box-sizing: border-box;
+    margin: 0;
+    position: absolute;
+    width: 393px;
+    height: 50px;
+    left: 0px;
+    top: 55px;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.0666667);
+    align-items: center;
+}
+
+/* 공구하기 */
+
+.indexNav > li{
+    display: block;
+    float: left;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.indexNav a{
+    color: #777;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.indexNav .active{
+    color: #17794A;
+    border-bottom: solid 2px #17794A;
+}
+
+
+/* products container */
+.indexProductAdContainer{
+    box-sizing: border-box;
+    position: absolute;
+    width: 370px;
+    height: 316px;
+    left: calc(50% - 370px/2 + 0.5px);
+    top: 125px;
+
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* 광고 이미지 예시*/
+.indexProductAdImg{
+    width: 314px;
+    height: 180px;
+    margin: auto;
+    margin-top: 30px;
+    background: url(./img/후드티.png);
+}
+
+
+/* products desc */
+.indexProductAdDescBg{
+    position: absolute;
+    width: 370px;
+    height: 88px;
+    left: calc(50% - 370px/2 + 0.5px);
+    top: 353px;
+
+    background: #025F2D;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+/* 오늘 공구 마감이에요! 3자리 남았어요! */
+.indexProductAdtext{
+    width: 332px;
+    height: 22px;
+    margin-top: 16px;
+    margin-left: 16px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+/* [후드티] 어쩌고 저쩌고 후드티 상품 설명란임... */
+.indexProductAddesc{
+    width: 332px;
+    height: 34px;
+    margin-left: 16px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    color: #EEEEEE;
+}
+
+/* products container */
+.indexProductsList{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 370px;
+    height: 485px;
+    left: calc(50% - 370px/2 + 0.5px);
+    top: 457px;
+
+    background: #FEFEFE;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.indexProductsListTitle{
+    display: block;
+    margin: 16px;
+    width: 226px;
+    height: 22px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+}
+
+.ProductBox{
+    display: flex;
+    margin: auto;
+    width: 350px;
+    height: 130px;
+    
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+}
+
+/* product img */
+.ProductImg{
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    margin: 10px;
+    background: url(./img/과잠.png);
+    border-radius: 5px;
+}
+
+.ProductDesc{
+    display: inline-block;
+    width: 200px;
+    height: 110px;
+    margin: 10px;
+}
+
+.ProductCat{
+    display: block;
+    margin-top: 5px;
+    width: 190px;
+    height: 22px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+
+    color: #777777;
+}
+
+/* 상품 설명 영역 4온스 솜이 들어있어 보온이 잘 되는 야구점퍼 입니다 */
+.Producttext{
+    display: inline-block;
+    margin: 5px 0px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+
+    color: #000000;
+}
+
+.progressbarBox{
+    width: 200px;
+}
+
+.attendees{
+    display: inline;
+    width: 62px;
+    height: 24px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+
+    color: #17794A;
+}
+
+
+.maxAttendees{
+    display: inline;
+    width: 42px;
+    height: 23px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+
+    color: #999999;
+}
+
+.ddayCount{
+    display: inline-block;
+    width: 118px;
+    height: 16px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: right;
+
+    color: #333333;
+
+}
+
+
+
+
+.progressbarBg{
+    width: 200px;
+    height: 5px;
+    background: #D9D9D9;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.progressbar{
+    width: 130px;
+    height: 5px;
+
+    background: #17794A;
+    border-radius: 5px;
+}
+
+
+
+/* mypage.html */
+
+/* 프로필 */
+/* .profile{
+    position: absolute;
+    width: 339px;
+    height: 102px;
+    left: 28px;
+    top: 68px;
+} */
+
+/* 프로필사진 */
+.profile_pic{
+    box-sizing: border-box;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 28px;
+    top: 90px;
+    background: url(./img/ewhalogo.png);
+}
+
+/* 닉네임 */
+.nickname{
+    position: absolute;
+    height: 29px;
+    left: 141px;
+    top: 101px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+/* icon "edit" */
+.edit{
+    position:relative;
+    width: 20px;
+    height: 20px;
+    left: 5px;
+    top: 5px;
+    background: url(./img/edit.png);  
+}
+
+/* 로그아웃 */
+.logout{
+    position: absolute;
+    height: 19px;
+    left: 319px;
+    top: 68px;   
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+
+/* design.html */
+.design_title{
+    position: relative;
+    top: 73px;
+    height: 50px;
+    text-align: center;
+    font-family: 'Noto Sans KR';
+    font-style:normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #000000;
+}
+
+.design_img{
+    position: relative;
+    margin-top: 10px;
+    width: 320px;
+    height: 320px;
+    background: url(./img/이미지등록.png);
+}
+
+
+.design_info textarea{
+    position: relative;
+    margin-top: 10px;
+    rows="3";
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    width: 320px;
+    /* height: px; */
+}
 
 
 
@@ -85,3 +450,6 @@
 
 
 /* product-detail.html */
+
+
+
