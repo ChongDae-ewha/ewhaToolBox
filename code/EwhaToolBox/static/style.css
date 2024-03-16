@@ -27,12 +27,10 @@
 
 /* header section */
 .headerSection{
+    display: block;
     box-sizing: border-box;
-    position: absolute;
     width: 393px;
     height: 55px;
-    left: 0px;
-    top: 0px;
     border-bottom: 1px solid rgba(17, 17, 17, 0.133333);
 }
 
@@ -73,14 +71,11 @@
 
 /* nav */
 .indexNav{
-    display: flex;
+    display: block;
     box-sizing: border-box;
     margin: 0;
-    position: absolute;
     width: 393px;
     height: 50px;
-    left: 0px;
-    top: 55px;
     border-bottom: 1px solid rgba(17, 17, 17, 0.0666667);
     align-items: center;
 }
@@ -95,11 +90,11 @@
     font-weight: 700;
     font-size: 15px;
     line-height: 22px;
-    display: flex;
     align-items: center;
     text-align: center;
 }
 .indexNav a{
+    display: block;
     color: #777;
     padding: 10px;
     text-decoration: none;
@@ -111,14 +106,14 @@
 }
 
 
-/* products container */
+/* products ad container */
 .indexProductAdContainer{
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
     box-sizing: border-box;
-    position: absolute;
     width: 370px;
-    height: 316px;
-    left: calc(50% - 370px/2 + 0.5px);
-    top: 125px;
+    height: 300px;
 
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
@@ -138,11 +133,10 @@
 
 /* products desc */
 .indexProductAdDescBg{
-    position: absolute;
+    display: inline-block;
+    margin-top: 10px;
     width: 370px;
     height: 88px;
-    left: calc(50% - 370px/2 + 0.5px);
-    top: 353px;
 
     background: #025F2D;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
@@ -150,8 +144,9 @@
 }
 
 
-/* 오늘 공구 마감이에요! 3자리 남았어요! */
+/* 광고용 멘트 */
 .indexProductAdtext{
+    display: inline-block;
     width: 332px;
     height: 22px;
     margin-top: 16px;
@@ -186,13 +181,14 @@
 
 /* products container */
 .indexProductsList{
+    display: block;
+    padding: 10px 0px;
+    margin: auto;
+    margin-bottom: 10px;
     box-sizing: border-box;
 
-    position: absolute;
     width: 370px;
-    height: 485px;
-    left: calc(50% - 370px/2 + 0.5px);
-    top: 457px;
+    height: auto;
 
     background: #FEFEFE;
     border: 1px solid #EEEEEE;
@@ -202,7 +198,7 @@
 
 .indexProductsListTitle{
     display: block;
-    margin: 16px;
+    margin: 10px;
     width: 226px;
     height: 22px;
 
@@ -222,6 +218,7 @@
 .ProductBox{
     display: flex;
     margin: auto;
+    margin-bottom: 10px;
     width: 350px;
     height: 130px;
     
@@ -324,9 +321,6 @@
     color: #333333;
 
 }
-
-
-
 
 .progressbarBg{
     width: 200px;
@@ -446,3 +440,35 @@
     line-height: 20px;
     width: 320px;
 }
+
+
+/* 총대매기 버튼 */
+.mydesignOpenBtn{
+    display: flex;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 340px;
+    height: 31px;
+
+    background: #FEFEFE;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.mydesignOpenBtnText{
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    
+}
+
+.mydesignOpenBtnTextHl{
+    color: #17794A;
+}
+
+
