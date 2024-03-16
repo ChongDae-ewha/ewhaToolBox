@@ -72,3 +72,16 @@
 
 /* index.html */
 
+
+
+/* product-detail.html */
+
+.productDeatilImage {
+    width: 50%; /* 부모 요소의 너비의 50% */
+    height: 50%; /* 부모 요소의 높이의 50% */
+    /* 부모 요소의 크기에 대한 비율로 설정 */
+}
+
+
+
+/* product-detail.html */
