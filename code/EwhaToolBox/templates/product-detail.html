@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이화공구함</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="layoutWrap">
+        <div class="layoutLeft">
+
+        </div>
+        <div class="layoutRight">
+            <div class="headerSection">
+                <div class="logo"></div>
+                <div class="noti"></div>
+                <div class="mypage"></div>
+            </div>
+            <!--여기에 수정하세요-->
+
+            <div class="productDeatilImage" >
+
+            </div>
+
+            <div class="productDetailInfo">
+                <div class="productDetailTitle">
+                    <h1>상품명</h1>
+                </div>
+                <div class="productDetailPrice">
+                    <h2>가격</h2>
+                </div>
+                <div class="productDetailDescription">
+                    <h3>상품설명</h3>
+                </div>
+                <div class="productDetailButton">
+                    <button>장바구니</button>
+                    <button>구매하기</button>
+                </div>
+
+            </div>
+
+            <div class="productDeatilProgress">
+                <h4>진행상황</h4>
+
+            </div>
+
+            <div class="productDetailSeller">
+                <h5>판매자 정보</h5>
+            </div>
+
+            <div class="productDeatilNav">
+                <!-- 각 탭에 대한 링크 -->
+                <a href="#" class="tablink" onclick="openTab(event, 'productDeatilGongji')">Home</a>
+                <a href="#" class="tablink" onclick="openTab(event, 'productDeatilReview')">About</a>
+                <a href="#" class="tablink" onclick="openTab(event, 'productDeatilQ&Q')">Contact</a>
+            </div>
+            
+            <!-- 각 탭 내용 -->
+            <div id="productDeatilGongji" class="tabcontent">
+                <h3>Home</h3>
+                <p>Welcome to the Home Page</p>
+            </div>
+            
+            <div id="productDeatilReview" class="tabcontent">
+                <h3>About</h3>
+                <p>Learn more about us</p>
+            </div>
+            
+            <div id="productDeatilQ&Q" class="tabcontent">
+                <h3>Contact</h3>
+                <p>Contact us here</p>
+            </div>
+
+            <script>
+                // 초기 홈 탭을 열도록 설정
+                document.getElementById("productDeatilGongji").style.display = "block";
+            
+                // 탭을 열고 닫는 함수
+                function openTab(evt, tabName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(tabName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+            </script>
+            
+            
+
+
+
+
+        </div>
+        <div id="sdaf"></div>
+    </div>
+</body>
+</html>
