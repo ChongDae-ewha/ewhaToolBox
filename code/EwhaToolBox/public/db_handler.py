@@ -152,8 +152,7 @@ class DBModule:
 
     def insert_post(self, data):
         post = {
-            "post_id" : data['post_id'],
-            "writer_id" : data['writer_id'],
+            # "writer_id" : data['writer_id'],
             "category" : data['category'],
             "title" : data['title'],
             "desc" : data['desc'],
@@ -162,8 +161,8 @@ class DBModule:
             "price" : data['price'],
             "min_amount" : data['min_amount'],
             "max_amount" : data['max_amount'],
-            "image_url" : data['image_url'],
-            "option_cnt" : data['option_cnt'],
+            # "image_url" : data['image_url'],
+            # "option_cnt" : data['option_cnt'],
             "status" : data['status']
         }
         self.db.child("post").push(post)
@@ -184,21 +183,21 @@ class DBModule:
 
 
     ## 작성자
-    def insert_writer(self, writer_id, data):
-        writer = {
-            "writer_id" : data['writer_id'],
-            "post_id" : data['post_id'],
-            "form_url" : data['form_url']
-        }
-        self.db.child("writer").child(writer_id).set(writer)
-        return True
+    # def insert_writer(self, writer_id, data):
+    #     writer = {
+    #         "writer_id" : data['writer_id'],
+    #         "post_id" : data['post_id'],
+    #         "form_url" : data['form_url']
+    #     }
+    #     self.db.child("writer").child(writer_id).set(writer)
+    #     return True
     
-    def writer_duplicate_check(self, writer_id):
-        writers = self.db.child("writer").get()
-        for writer in writers.each():
-            if (writer.key() == writer_id):
-                return False
-        return True
+    # def writer_duplicate_check(self, writer_id):
+    #     writers = self.db.child("writer").get()
+    #     for writer in writers.each():
+    #         if (writer.key() == writer_id):
+    #             return False
+    #     return True
 
 
     

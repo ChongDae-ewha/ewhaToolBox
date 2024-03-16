@@ -36,23 +36,12 @@ def create_account():
     return render_template("create-account.html")
 
     
-@bp.route("/user/signup", methods=["POST"])
+@bp.route("/user/signup/submit", methods=["POST"])
 def reg_user_submit():
-    user_id = request.args.get("user_id")
-    pw = request.args.get("pw")
-    nickname = request.args.get("nickname")
-    email = request.args.get("email")
-    phone = request.args.get("phone")
-    address = request.args.get("address")
+    user_id = request.form['user_id']
+    data=request.form
 
-    success = DBModule.insert_user(user_id, {
-        "user_id": user_id,
-        "pw": pw,
-        "nickname": nickname,
-        "email": email,
-        "phone": phone,
-        "address": address
-    })
+    success = DBModule.insert_user(user_id, data)
 
     # 회원가입 성공 여부에 따른 응답 반환
     if success:
@@ -149,7 +138,7 @@ def view_register():
 @bp.route("/product-register/submit", methods=["POST"])
 def insert_post():
     data = request.form
-    if DB.insert_post(data['post_id'], data):
+    if DB.insert_post(data):
         return 200
     else:
         return 500
