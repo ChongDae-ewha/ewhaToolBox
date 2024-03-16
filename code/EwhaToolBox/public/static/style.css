@@ -1503,6 +1503,176 @@ input[type="submit"]:hover {
     border-bottom: solid 2px #17794A;
 }
 
+.writeGongji {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 370px;
+    height: 35px;
+
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+}
+.writegongji-text{
+    position: relative;
+    width: 253px;
+    height: 29.36px;
+    left: 10px;
+    top: -10px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.addButton {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    left: 335px;
+    top: -45px
+}
+
+.gongjiTab {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 370px;
+    height: 70px;
+
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+}
+
+.gongjiTab-text{
+    position: relative; /* 부모 요소에 대해 상대 위치 설정 */
+    top: 5px;
+    left: 10px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+
+.editButton {
+    position: relative; /* 부모 요소에 대해 상대 위치 설정 */
+    top: -40px;
+    left: 335px;
+}
+
+
+.participate-button {
+
+    box-sizing: border-box;
+
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    width: 370px;
+    height: 50px;
+
+    background: #17794A;
+    border: 1px solid #17794A;
+    border-radius: 5px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    /* identical to box height */
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.answer {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+
+    width: 370px;
+    height: 70px;
+
+}
+#arrowImage{
+    position: relative;
+    left: 20px;
+    top: 5px;
+}
+.answerTab {
+    position: relative;
+    left: 50px;
+    top: -15px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    width: 320px;
+    height: 70px;
+
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+}
+
+#laterImage {
+    display: block;
+    position: relative;
+    left: 15px;
+    top: 5px;
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+
+.laterTab {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 370px;
+    height: 160px;
+
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+}
+
+.laterButton {
+    position: relative; /* 부모 요소에 대해 상대 위치 설정 */
+    top: -160px;
+    left: 335px;
+}
+
 
 
 /*product-register.html*/
