@@ -56,52 +56,49 @@ class DBModule:
     
 
     ## 공지
-    def insert_notice(self, notice_id, data):
+    def insert_notice(self, post_id, data):
         notice = {
-            "notice_id" : data['notice_id'],
             "post_id" : data['post_id'],
             "writer_id" : data['writer_id'],
             "notice_desc" : data['notice_desc']
         }
-        self.db.child("posts").child("notice").child(notice_id).set(notice)
+        self.db.child("posts").child(post_id).push(notice)
         return True
     
-    def notice_duplicate_check(self, notice_id):
-        notices = self.db.child("posts").child("notice").get()
-        for notice in notices.each():
-            if (notice.key() == notice_id):
-                return False
-        return True
+    # def notice_duplicate_check(self, notice_id):
+    #     notices = self.db.child("notice").get()
+    #     for notice in notices.each():
+    #         if (notice.key() == notice_id):
+    #             return False
+    #     return True
    
     
     ## 리뷰
-    def insert_review(self, review_id, data):
+    def insert_review(self, post_id, data):
         review = {
-            "review_id" : data['review_id'],
             "post_id" : data['post_id'],
             "writer_id" : data['writer_id'],
             "review_desc" : data['review_desc']
         }
-        self.db.child("review").child(review_id).set(review)
+        self.db.child("posts").child(post_id).push(review)
         return True
     
-    def review_duplicate_check(self, review_id):
-        reviews = self.db.child("review").get()
-        for review in reviews.each():
-            if (review.key() == review_id):
-                return False
-        return True
+    # def review_duplicate_check(self, review_id):
+    #     reviews = self.db.child("review").get()
+    #     for review in reviews.each():
+    #         if (review.key() == review_id):
+    #             return False
+    #     return True
 
 
     ## Q&A - Q
-    def insert_question(self, question_id, data):
+    def insert_question(self, post_id, data):
         question = {
-            "question_id" : data['question_id'],
             "post_id" : data['post_id'],
             "writer_id" : data['writer_id'],
             "question_desc" : data['question_desc']
         }
-        self.db.child("question").child(question_id).set(question)
+        self.db.child("question").child(post_id).ㅔpush(question)
         return True
     
     def question_duplicate_check(self, _id):
@@ -113,7 +110,7 @@ class DBModule:
     
 
     ## Q&A - A
-    def insert_answer(self, answer_id, data):
+    def insert_answer(self, question_id, data):
         answer = {
             "answer_id" : data['answer_id'],
             "question_id" : data['question_id'],
