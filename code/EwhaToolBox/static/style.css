@@ -345,13 +345,18 @@
 /* mypage.html */
 
 /* 프로필 */
-/* .profile{
+.profile{
+    display: flex;
+    box-sizing: border-box;
+    margin: 0;
     position: absolute;
     width: 339px;
     height: 102px;
-    left: 28px;
-    top: 68px;
-} */
+    left: 0px;
+    top: 55px;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.0666667);
+    align-items: center;
+}
 /* 프로필사진 */
 .profile_pic{
     box-sizing: border-box;
@@ -398,11 +403,11 @@
 .MypageProduct{
     box-sizing: border-box;
 
-    position: absolute;
+    position: relative;
     width: 370px;
     height: 485px;
     left: calc(50% - 370px/2 + 0.5px);
-    top: 300px;
+    top:100px;
 
     background: #FEFEFE;
     border: 1px solid #EEEEEE;
@@ -434,7 +439,6 @@
 .design_info textarea{
     position: relative;
     margin-top: 10px;
-    rows:"3";
     font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: 500;
