@@ -580,7 +580,7 @@
 
 /* design-register.html */
 .design_title{
-    margin:20px 0 50px 0;
+    margin:20px 0 30px 0;
     text-align: center;
     font-family: 'Noto Sans KR';
     font-style:normal;
@@ -599,8 +599,8 @@
 }
 .design_info p input{
     margin-top: 10px;
-    padding: 0;
-    width: 320px;
+    padding: 5px;
+    width: 310px;
     height: 40px;
     
     border: 1px solid black;
@@ -628,6 +628,26 @@
     resize: none;
     border: 1px solid black;
     border-radius: 5px;
+}
+.design_info button{
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 0;
+
+    width: 320px;
+    height: 50px;
+
+    background: #17794A;
+    border: 1px solid #17794A;
+    border-radius: 5px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+
+    color: #ffffff;
+    text-align: center;
 }
 /* design.html 끝 */
 
