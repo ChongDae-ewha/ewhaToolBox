@@ -164,7 +164,7 @@
     color: #FFFFFF;
 }
 
-/* [후드티] 어쩌고 저쩌고 후드티 상품 설명란임... */
+/*상품 설명란 */
 .indexProductAddesc{
     width: 332px;
     height: 34px;
@@ -1258,5 +1258,153 @@ input[type="submit"]:hover {
 
     color: #FFFFFF;
 
+}
+
+
+/* product-detail.html  */
+
+.productDeatilImage{
+    width: 363px;
+    height: 300px;
+    padding: 15px;
+    text-align: center;
+    border-bottom: solid 1px #ddd;
+}
+
+#productDetailImage{
+    display: block;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.statusBox{
+    width: 70px;
+    height: 30px;
+    margin: 0 10px;
+
+    background: #FFFFFF;
+    border: 0.5px solid #999999;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    float: left;
+}
+
+#statusText{
+    display: block;
+    margin: auto;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: #17794A;
+}
+
+
+#productDetailTitle{
+    float: left;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    padding: 2px;
+}
+
+.productDetailInfo{
+    width: 393px;
+    height: auto;
+}
+
+.productDetailBox{
+    display: flex;
+    align-items: center;
+    width: 383px;
+    height: 50px;
+    padding: 5px;
+    border-bottom: solid 1px #ddd;
 
 }
+
+#productDetailDescription{
+    margin: auto;
+}
+.productDetailLabel{
+    width: 90px;
+}
+
+.productDetailVar{
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 900;
+    color: #17794A;
+}
+
+.productDetailBox .userBox{
+    display: flex;
+    width: 200px;
+}
+.productDetailBox .userBox > img{
+    width: 51px;
+    height: 51px;
+    margin-right: 10px;
+}
+
+.productDetailBox .userBox > .userName{
+    width: 300px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+/* nav */
+.productDeatilNav{
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    width: 393px;
+    height: 50px;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.0666667);
+    align-items: center;
+}
+
+/* 공구하기 */
+
+.productDeatilNav > li{
+    width: 100px;
+    display: block;
+    float: left;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    align-items: center;
+    text-align: center;
+}
+.productDeatilNav a{
+    display: block;
+    color: #777;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.productDeatilNav .active{
+    color: #17794A;
+    border-bottom: solid 2px #17794A;
+}
+

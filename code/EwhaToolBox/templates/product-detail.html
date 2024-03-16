@@ -20,61 +20,65 @@
             <!--여기에 수정하세요-->
 
             <div class="productDeatilImage">
-
                 <!-- 이미지를 표시할 img 요소 -->
-                <img id="productDetailImage" src="" alt="상품이미지">
-
+                <img id="productDetailImage" src="../static/img/과잠.png" alt="상품이미지">
+                <!-- 공구 진행 상태 -->
+                <div class="statusBox"><a id="statusText">{{상태}}</a></div>
+                <!-- 상품 이름 -->
+                <a id="productDetailTitle">{{상품명}}</a>
             </div>
             <script>
-                // Flask에서 받아온 이미지 URL
-                var imageUrl = "{{ image_url }}";
+                // // Flask에서 받아온 이미지 URL
+                // var imageUrl = "{{ image_url }}";
             
-                // 이미지를 표시하는 함수
-                function displayImage() {
-                    var imageElement = document.getElementById('productDetailImage');
-                    // 이미지의 src 속성을 Flask에서 받아온 이미지 URL로 설정
-                    imageElement.src = imageUrl;
-                }
-                // 페이지가 로드될 때 이미지 표시 함수를 호출
-                window.onload = function() {
-                    displayImage();
-                };
+                // // 이미지를 표시하는 함수
+                // function displayImage() {
+                //     var imageElement = document.getElementById('productDetailImage');
+                //     // 이미지의 src 속성을 Flask에서 받아온 이미지 URL로 설정
+                //     imageElement.src = imageUrl;
+                // }
+                // // 페이지가 로드될 때 이미지 표시 함수를 호출
+                // window.onload = function() {
+                //     displayImage();
+                // };
             </script>
 
 
             <div class="productDetailInfo">
-                <div class="productDetailTitle">
-                    <h1>상품명</h1>
+                <div class="productDetailBox">
+                    <a id="productDetailDescription">{{상품설명}}</a>
                 </div>
-                <div class="productDetailPrice">
-                    <h2>가격</h2>
+                <div class="productDetailBox">
+                    <div class="productDetailLabel">가격</div><a class="productDetailVar" id="productDetailPrice">{{가격}}</a>
                 </div>
-                <div class="productDetailDescription">
-                    <h3>상품설명</h3>
+                <div class="productDetailBox">
+                    <div class="productDetailLabel">판매기간</div><a class="productDetailVar" id="productDetailTerm">{{판매기간}}</a>
                 </div>
-                <div class="productDetailButton">
-                    <button>장바구니</button>
-                    <button>구매하기</button>
+                <div class="productDetailBox">
+                    <div class="productDetailLabel">진행상황</div>
+                    <div class="progressbarBox">
+                        <div class="attendees">20명</div>
+                        <div class="maxAttendees">/30명</div>
+                        <div class="ddayCount">마감까지 7일</div>
+                        <div class="progressbarBg">
+                            <div class="progressbar"></div>
+                        </div>
+                    </div>
                 </div>
-
+                <div class="productDetailBox">
+                    <div class="productDetailLabel">총대</div>
+                    <div class="userBox">
+                        <img src="../static/img/ewhalogo.png">
+                        <a class="userName">{{총대이름}}</br>공구 진행 횟수 2번</a>
+                    </div>
+                </div>
             </div>
+            <ul class="productDeatilNav">
+                <li><a href="#" class="tablink active" onclick="openTab(event, 'productDeatilGongji')">공지</a></li>
+                <li><a href="#" class="tablink" onclick="openTab(event, 'productDeatilReview')">후기</a></li>
+                <li><a href="#" class="tablink" onclick="openTab(event, 'productDeatilQ&Q')">QnA</a></li>
+            </ul>
 
-            <div class="productDeatilProgress">
-                <h4>진행상황</h4>
-
-            </div>
-
-            <div class="productDetailSeller">
-                <h5>판매자 정보</h5>
-            </div>
-
-            <div class="productDeatilNav">
-                <!-- 각 탭에 대한 링크 -->
-                <a href="#" class="tablink" onclick="openTab(event, 'productDeatilGongji')">Home</a>
-                <a href="#" class="tablink" onclick="openTab(event, 'productDeatilReview')">About</a>
-                <a href="#" class="tablink" onclick="openTab(event, 'productDeatilQ&Q')">Contact</a>
-            </div>
-            
             <!-- 각 탭 내용 -->
             <div id="productDeatilGongji" class="tabcontent">
                 <h3>Home</h3>
