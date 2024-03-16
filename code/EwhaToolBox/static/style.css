@@ -578,11 +578,9 @@
 
 
 
-/* design.html */
+/* design-register.html */
 .design_title{
-    position: relative;
-    top: 73px;
-    height: 50px;
+    margin:20px 0 50px 0;
     text-align: center;
     font-family: 'Noto Sans KR';
     font-style:normal;
@@ -590,24 +588,46 @@
     font-size: 25px;
     color: #000000;
 }
+.design_info p{
+    margin: auto;
+    width: 320px;
+    font-family: 'Noto Sans KR';
+    font-style:normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+}
+.design_info p input{
+    margin-top: 10px;
+    padding: 0;
+    width: 320px;
+    height: 40px;
+    
+    border: 1px solid black;
+    border-radius: 5px;
+}
 
 .design_img{
-    position: relative;
-    margin-top: 10px;
+    margin: 20px auto 20px auto;
     width: 320px;
     height: 320px;
-    background: url(./img/이미지등록.png);
+    background: url(./img/디자인등록.png);
+    background-repeat: no-repeat;
 }
 
 .design_info textarea{
-    position: relative;
     margin-top: 10px;
+    padding:10px;
     font-family: 'Noto Sans KR';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-    width: 320px;
+    width: 300px;
+
+    resize: none;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 /* design.html 끝 */
 
