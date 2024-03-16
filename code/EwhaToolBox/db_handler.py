@@ -99,7 +99,7 @@ class DBModule:
         self.db.child("notice").child(notice_id).set(notice)
         return True
     
-    def notice_duplicate_check(self, _id):
+    def notice_duplicate_check(self, notice_id):
         notices = self.db.child("notice").get()
         for notice in notices.each():
             if (notice.key() == notice_id):
