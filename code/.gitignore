@@ -7,3 +7,6 @@ quickstart.py
 ./EwhaToolbox/test.py
 myenv3.10/
 ./EwhaToolbox/myenv3.10/
+.firebase/
+firebase/
+.google-cloud-sdk/

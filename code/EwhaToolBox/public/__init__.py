@@ -3,12 +3,12 @@ from flask import Flask
 def create_app():
     app = Flask(__name__)
 
-    from.views import main_views
-    app.register_blueprint(main_views.bp)
+    from .app import bp as app_bp
+    app.register_blueprint(app_bp)
 
     return app
 
-from EwhaToolBox.db_handler import DBModule
+from public.db_handler import DBModule
 
 DB= DBModule()
 

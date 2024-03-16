@@ -3,12 +3,10 @@ import sys
 import json
 
 from flask import Flask,  render_template, jsonify, request, Blueprint, redirect, url_for
-from ..db_handler import DBModule
+from .db_handler import DBModule
 
 bp = Blueprint('main',__name__,url_prefix='/')
 DB = DBModule()
-
-
 
 
 #로그인 화면
@@ -82,7 +80,7 @@ def name_veri():
 
 #홈 화면
 
-@bp.route("/index")
+@bp.route("/")
 def view_index():
     return render_template("index.html")
 
