@@ -158,7 +158,6 @@ def insert_post():
 
 @bp.route("/product-register/edit/<int:post_id>", methods=["GET", "POST"])
 def update_post(post_id):
-    post = DB.post_detail(post_id=post_id)
     data = request.form
     if DB.update_post(post_id, data):
         return 200
