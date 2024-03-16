@@ -110,7 +110,7 @@ class DBModule:
     
 
     ## Q&A - A
-    def insert_answer(self, question_id, data):
+    def insert_answer(self, answer_id, data):
         answer = {
             "answer_id" : data['answer_id'],
             "question_id" : data['question_id'],
