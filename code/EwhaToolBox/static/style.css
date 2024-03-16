@@ -342,3 +342,103 @@
     background: #17794A;
     border-radius: 5px;
 }
+/* mypage.html */
+
+/* 프로필 */
+/* .profile{
+    position: absolute;
+    width: 339px;
+    height: 102px;
+    left: 28px;
+    top: 68px;
+} */
+/* 프로필사진 */
+.profile_pic{
+    box-sizing: border-box;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 28px;
+    top: 90px;
+    background: url(./img/ewhalogo.png);
+}
+/* 닉네임 */
+.nickname{
+    position: absolute;
+    height: 29px;
+    left: 141px;
+    top: 101px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+
+/* icon "edit" */
+.edit{
+    position:relative;
+    width: 20px;
+    height: 20px;
+    left: 5px;
+    top: 5px;
+    background: url(./img/edit.png);  
+}
+/* 로그아웃 */
+.logout{
+    position: absolute;
+    height: 19px;
+    left: 319px;
+    top: 68px;   
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+/*내 공구함 상품*/
+.MypageProduct{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 370px;
+    height: 485px;
+    left: calc(50% - 370px/2 + 0.5px);
+    top: 300px;
+
+    background: #FEFEFE;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* design.html */
+.design_title{
+    position: relative;
+    top: 73px;
+    height: 50px;
+    text-align: center;
+    font-family: 'Noto Sans KR';
+    font-style:normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #000000;
+}
+
+.design_img{
+    position: relative;
+    margin-top: 10px;
+    width: 320px;
+    height: 320px;
+    background: url(./img/이미지등록.png);
+}
+
+.design_info textarea{
+    position: relative;
+    margin-top: 10px;
+    rows:"3";
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    width: 320px;
+}
