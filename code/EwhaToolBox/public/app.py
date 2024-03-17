@@ -58,6 +58,7 @@ def card_veri():
     data=request.form
     image_url=data['image_url']
     name = verify(image_url)
+    # if (name == data['name']): return render_template("")
 
 @bp.route("/user/name-veri", methods=["POST"])
 def name_veri():
