@@ -133,15 +133,16 @@ def insert_order():
     
 @bp.route("/product-register")
 def view_register():
+    print("product-register")
     return render_template("product-register.html")
 
 @bp.route("/product-register/submit", methods=["POST"])
 def insert_post():
     data = request.form
     if DB.insert_post(data):
-        return 200
+        return redirect("/")
     else:
-        return 500
+        return jsonify({"message": "회원가입 실패"}), 500
 
 @bp.route("/product-register/edit/<int:post_id>", methods=["GET", "POST"])
 def update_post(post_id):
