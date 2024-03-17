@@ -19,7 +19,10 @@ class DBModule:
             "nickname" : data['nickname'],
             "email" : data['email'],
             "phone" : data['phone'],
-            "address" : data['address']
+            "address0" : data['address0'],
+            "address1" : data['address1'],
+            "address2" : data['address2'],
+            "address3" : data['address3'],
             }
         self.db.child("user").child(user_id).set(user)
         return True
