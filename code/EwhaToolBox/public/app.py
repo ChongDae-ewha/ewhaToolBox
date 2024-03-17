@@ -5,6 +5,7 @@ import pyrebase
 
 from flask import Flask,  render_template, jsonify, request, Blueprint, redirect, url_for
 from .db_handler import DBModule
+from .verify_card import verify
 
 bp = Blueprint('main',__name__,url_prefix='/')
 DB = DBModule()
@@ -54,7 +55,9 @@ def reg_user_submit():
 
 @bp.route("/user/card-veri", methods=["POST"])
 def card_veri():
-    pass
+    data=request.form
+    image_url=data['image_url']
+    name = verify(image_url)
 
 @bp.route("/user/name-veri", methods=["POST"])
 def name_veri():
@@ -177,3 +180,4 @@ def view_mypage():
 @bp.route("/design")
 def view_design():
     return render_template("design-register.html")
+
