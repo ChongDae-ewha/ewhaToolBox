@@ -10,3 +10,5 @@ myenv3.10/
 .firebase/
 firebase/
 .google-cloud-sdk/
+./EwhaToolBox/public/EasyOCR
+./EwhaToolBox/public/ultralytics
