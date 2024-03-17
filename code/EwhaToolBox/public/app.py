@@ -10,8 +10,6 @@ bp = Blueprint('main',__name__,url_prefix='/')
 DB = DBModule()
 
 
-
-
 #로그인 화면
 @bp.route("/login")
 def view_login():
