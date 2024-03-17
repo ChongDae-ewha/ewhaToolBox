@@ -90,7 +90,8 @@
 
 
 # AI
-![image](https://github.com/ChongDae-ewha/ewhaToolBox/assets/112560299/42abd3b7-d27a-492b-a683-045c49d9ee28)
+![1_NIJb0RLUPyucJo_Z9yTPrA](https://github.com/ChongDae-ewha/ewhaToolBox/assets/112560299/1d5a24ef-2f22-4e8f-87e2-393b86268a30)
+
 
 
 
