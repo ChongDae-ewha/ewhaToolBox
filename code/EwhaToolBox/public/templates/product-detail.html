@@ -19,7 +19,8 @@
 <body>
     <div class="layoutWrap">
         <div class="layoutLeft">
-
+            <div class="serviceCopy">함께 사는 즐거움,</div>
+            <div class="serviceName">이화공구함</div>
         </div>
         <div class="layoutRight noto-sans">
             <div class="headerSection">
@@ -32,16 +33,57 @@
                     <a href="/login"><img class="mypage" src="./static/img/mypage.svg"></a>
                 </div>
             </div>
-            <!--여기에 수정하세요-->
 
-            <div class="productDeatilImage">
-                <!-- 이미지를 표시할 img 요소 -->
-                <img id="productDetailImage" src="./static/img/과잠.png" alt="상품이미지">
-                <!-- 공구 진행 상태 -->
-                <div class="statusBox"><a id="statusText">{{상태}}</a></div>
-                <!-- 상품 이름 -->
-                <a id="productDetailTitle">{{상품명}}</a>
+            <div class="productDeatilContainer">
+                <div class="productDeatilImage">
+                    <!-- 이미지를 표시할 img 요소 -->
+                    <img id="productDetailImage" src="./static/img/과잠.png" alt="상품이미지">
+                    <!-- 공구 진행 상태 -->
+                    <div class="statusBox"><a id="statusText">모집중</a></div>
+                    <!-- 상품 이름 -->
+                    <a id="productDetailTitle">따뜻한 4온스 영문 학잠</a>
+                </div>
+
+                <div class="productDetailInfo">
+                    <div class="productDetailBox">
+                        <a id="productDetailDescription">영문으로 표기되어 있는 4온스 학잠입니다.</a>
+                    </div>
+                    <div class="productDetailBox">
+                        <div class="productDetailLabel">가격</div><a class="productDetailVar" id="productDetailPrice">45,000원</a>
+                    </div>
+                    <div class="productDetailBox">
+                        <div class="productDetailLabel">판매기간</div><a class="productDetailVar" id="productDetailTerm">2024.03.15~2024.03.18</a>
+                    </div>
+                    <div class="productDetailBox">
+                        <div class="productDetailLabel">진행상황</div>
+                        <div class="progressbarBox">
+                            <div class="attendees">20명</div>
+                            <div class="maxAttendees">/30명</div>
+                            <div class="ddayCount">마감까지 7일</div>
+                            <div class="progressbarBg">
+                                <div class="progressbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productDetailBox">
+                        <div class="productDetailLabel">총대</div>
+                        <div class="userBox">
+                            <img src="./static/img/ewhalogo.png">
+                            <a class="userName">익명의 이화인</br>공구 진행 횟수 2번</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="participateSection">
+                    <button type="submit" class="participate-button" formaction="/register">공구 참여</button>
+                </div>
             </div>
+
+            <ul class="productDeatilNav">
+                <li><a href="#" class="tablink active" onclick="openTab(event, 'productDeatilGongji')">공지</a></li>
+                <li><a href="#" class="tablink" onclick="openTab(event, 'productDeatilReview')">후기</a></li>
+                <li><a href="#" class="tablink" onclick="openTab(event, 'productDeatilQ&Q')">QnA</a></li>
+            </ul>
+
             <script>
                 // // Flask에서 받아온 이미지 URL
                 // var imageUrl = "{{ image_url }}";
@@ -59,41 +101,6 @@
             </script>
 
 
-            <div class="productDetailInfo">
-                <div class="productDetailBox">
-                    <a id="productDetailDescription">{{상품설명}}</a>
-                </div>
-                <div class="productDetailBox">
-                    <div class="productDetailLabel">가격</div><a class="productDetailVar" id="productDetailPrice">{{가격}}</a>
-                </div>
-                <div class="productDetailBox">
-                    <div class="productDetailLabel">판매기간</div><a class="productDetailVar" id="productDetailTerm">{{판매기간}}</a>
-                </div>
-                <div class="productDetailBox">
-                    <div class="productDetailLabel">진행상황</div>
-                    <div class="progressbarBox">
-                        <div class="attendees">20명</div>
-                        <div class="maxAttendees">/30명</div>
-                        <div class="ddayCount">마감까지 7일</div>
-                        <div class="progressbarBg">
-                            <div class="progressbar"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="productDetailBox">
-                    <div class="productDetailLabel">총대</div>
-                    <div class="userBox">
-                        <img src="./static/img/ewhalogo.png">
-                        <a class="userName">{{총대이름}}</br>공구 진행 횟수 2번</a>
-                    </div>
-                </div>
-            </div>
-            <ul class="productDeatilNav">
-                <li><a href="#" class="tablink active" onclick="openTab(event, 'productDeatilGongji')">공지</a></li>
-                <li><a href="#" class="tablink" onclick="openTab(event, 'productDeatilReview')">후기</a></li>
-                <li><a href="#" class="tablink" onclick="openTab(event, 'productDeatilQ&Q')">QnA</a></li>
-            </ul>
-
             <!-- 각 탭 내용 -->
             <div id="productDeatilGongji" class="tabcontent">
                 <div class="writeGongji">
@@ -108,11 +115,6 @@
                         <img class="editButton" src="./static/img/more.png" alt="추가">
                     </a>
                 </div>
-                <div class="participateSection">
-                    <button type="submit" class="participate-button" formaction="/register">공구 참여</button>
-    
-                </div>
-
             </div>
             
             <div id="productDeatilReview" class="tabcontent">
@@ -128,7 +130,6 @@
                     <a href="#">
                         <img class="laterButton" src="./static/img/more.png" alt="추가">
                     </a>
-
 
                 </div>
             </div>
