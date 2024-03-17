@@ -51,9 +51,12 @@ def reg_user_submit():
         return redirect("/")
     else:
         return jsonify({"message": "회원가입 실패"}), 500
-    
 
-@bp.route("/user/card-veri", methods=["POST"])
+@bp.route("/user/card-veri")
+def view_card_veri():
+    return render_template("verify-card.html")
+
+@bp.route("/user/card-veri/post", methods=["POST"])
 def card_veri():
     data=request.form
     image=data['image']

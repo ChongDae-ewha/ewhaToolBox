@@ -8,7 +8,7 @@ import cv2
 
 file_path = os.path.dirname(os.path.abspath(__file__))
 
-# input = sys.argv[1]
+input = sys.argv[1]
 
 # if len(sys.argv) != 1:
 #    print("incorrect argument")
@@ -77,4 +77,4 @@ def verify(input):
                 print(detected_name)
                 return(detected_name)
               
-# verify(input=input)
+verify(input=input)

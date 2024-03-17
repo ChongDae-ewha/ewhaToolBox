@@ -9,7 +9,7 @@ def create_app():
 
     return app
 
-from code.EwhaToolBox.server.src.db_handler import DBModule
+from .db_handler import DBModule
 
 # DB= DBModule()
 
