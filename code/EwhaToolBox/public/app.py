@@ -1,12 +1,15 @@
 import io
 import sys
 import json
+import pyrebase
 
 from flask import Flask,  render_template, jsonify, request, Blueprint, redirect, url_for
 from .db_handler import DBModule
 
 bp = Blueprint('main',__name__,url_prefix='/')
 DB = DBModule()
+
+
 
 
 #로그인 화면
@@ -133,18 +136,20 @@ def insert_order():
     
 @bp.route("/product-register")
 def view_register():
+    print("product-register")
     return render_template("product-register.html")
 
 @bp.route("/product-register/submit", methods=["POST"])
 def insert_post():
     data = request.form
     if DB.insert_post(data):
-        return 200
+        return redirect("/")
     else:
-        return 500
+        return jsonify({"message": "회원가입 실패"}), 500
 
 @bp.route("/product-register/edit/<int:post_id>", methods=["GET", "POST"])
 def update_post(post_id):
+    post = DB.post_detail(post_id=post_id)
     data = request.form
     if DB.update_post(post_id, data):
         return 200
