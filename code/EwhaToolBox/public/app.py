@@ -3,6 +3,8 @@ import sys
 import json
 
 from flask import Flask,  render_template, jsonify, request, Blueprint, redirect, url_for
+from firebase_admin import initialize_app
+from firebase_functions import https_fn
 from .db_handler import DBModule
 
 bp = Blueprint('main',__name__,url_prefix='/')
@@ -173,3 +175,10 @@ def view_mypage():
 @bp.route("/design")
 def view_design():
     return render_template("design-register.html")
+
+
+
+@https_fn.on_request()
+def httpsflaskexample(req: https_fn.Request) -> https_fn.Response:
+    with bp.request_context(req.environ):
+        return bp.full_dispatch_request()
