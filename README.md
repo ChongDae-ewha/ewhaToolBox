@@ -23,6 +23,7 @@
 
 
 # AI
+![image](https://github.com/ChongDae-ewha/ewhaToolBox/assets/112560299/42abd3b7-d27a-492b-a683-045c49d9ee28)
 
 
 
