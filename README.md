@@ -93,13 +93,21 @@
 <img width="192" alt="1_NIJb0RLUPyucJo_Z9yTPrAd" src="https://github.com/ChongDae-ewha/ewhaToolBox/assets/112560299/1912e208-a4c1-4c64-86d5-04058b8cae4d">
 <img width="108" alt="1_NIJb0RLUPyucJo_Z9yTPrAd" src="https://github.com/ChongDae-ewha/ewhaToolBox/assets/112560299/a66dfd0b-9c35-4c2d-bd59-9cb08ebac6af">
 
+### [ 학생증 인증 기능 ]
+객체인식과 OCR을 사용해 학생증 인증 기능 구현
+
+1. Yolov8
+- ultralytics에서 제공하는 오픈 소스를 사용해 객체 탐지
+- 총 두 단계에 걸쳐 객체 탐지 진행
+  1) 학생증 카드 영역 인식: '이화여자대학교 총장' 표시를 포함하는 카드의 경우 학생증으로 분류
+  2) 카드에 적힌 학생 이름 영역 인식: 신 학생증, 구 학생증으로 나눠 각각 종류의 학생증에 적힌 이름을 탐지
 
 
+2. OCR
+- EasyOCR에서 제공하는 오픈 소스를 사용해 글자 인식
+- 카드에 적힌 학생 이름 영역을 입력 받아 글자를 읽어들여 글자를 반환
 
+사용 데이터: card_train, old_card_train, new_card_train
 
-
-피그마 URL - 
-API 명세서 URL - 
-데이터베이스 설계 - 
 
 
