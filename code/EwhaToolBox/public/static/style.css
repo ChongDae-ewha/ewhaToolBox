@@ -661,207 +661,103 @@
 
 /*login.html*/
 
-.login .login-text {
-    /* 로그인 */
+.loginSection{
+    width: 100%;
+    height: 80px;
 
-    position: absolute;
-    width: 160px;
-    height: 50px;
-    left: calc(50% - 160px/2 + 35px);
-    top: 100px;
-
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 29px;
     display: flex;
     align-items: center;
+
+    margin: auto;
+}
+
+.login-text{
+    width: 100%;
+    height: 26px;
+    margin: auto;
     text-align: center;
-    text-transform: uppercase;
 
+}
+
+.login-text > a{
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
     color: #000000;
-
-
 }
 
-.login input[type="email"] {
-    /* Rectangle 4 */
+.loginBox{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
 
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 315px;
-    height: 60px;
-    left: 39px;
-    top: 221px;
+.loginInputField{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 15px;
 
     background: #FFFFFF;
-    border: 1px solid #696969;
+    border: 1px solid #ddd;
     border-radius: 5px;
 
+    color: rgba(86, 85, 85, 0.68);
 }
 
-.login input[type="email"] {
-    /* 이메일 주소 */
-
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
+.loginBox #email::placeholder {
+    font-weight: 400;
+    font-size: 15px;
     line-height: 26px;
     /* identical to box height */
     display: flex;
     align-items: center;
-    text-transform: uppercase;
 
     color: rgba(86, 85, 85, 0.68);
 
 }
 
-.login input[type="password"] {
-    /* Rectangle 5 */
-
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 315px;
-    height: 60px;
-    left: 39px;
-    top: 298px;
-
-    background: #FFFFFF;
-    border: 1px solid #696969;
-    border-radius: 5px;
-
-}
-
-.login input[type="password"] {
-    /* 비밀번호 */
-
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
+.loginBox #password::placeholder {
+    font-weight: 400;
+    font-size: 15px;
     line-height: 26px;
     /* identical to box height */
     display: flex;
     align-items: center;
-    text-transform: uppercase;
 
     color: rgba(86, 85, 85, 0.68);
 
 }
 
-.login input[type="submit"] {
 
-    /* Rectangle 6 */
-
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 315px;
-    height: 60px;
-    left: 38px;
-    top: 385px;
+.loginBtn{
+    margin-bottom: 10px;
+    width: 300px;
+    height: 40px;
 
     background: #17794A;
     border: 1px solid #17794A;
     border-radius: 5px;
 
-
-}
-
-.login #email::placeholder {
-    /* 이메일 주소 */
-
     font-family: 'Noto Sans KR';
     font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
-    /* identical to box height */
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-
-    color: rgba(86, 85, 85, 0.68);
-
-}
-
-.login #password::placeholder {
-    /* 이메일 주소 */
-
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
-    /* identical to box height */
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-
-    color: rgba(86, 85, 85, 0.68);
-
-}
-
-.login input[type="submit"] {
-    /* 로그인 */
-
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 15px;
     line-height: 29px;
-    /* identical to box height */
-    text-transform: uppercase;
 
     color: rgba(255, 255, 255, 0.95);
     text-align: center;
 
 }
 
-.login input[type="submit"]:hover {
+.loginBtn:hover {
     background-color: #878a8d;
     /* Darker background color on hover */
 }
 
-.signup-button {
-    /* Rectangle 7 */
 
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 315px;
-    height: 60px;
-    left: 38px;
-    top: 462px;
-
-    background: #17794A;
-    border: 1px solid #17794A;
-    border-radius: 5px;
-
-}
-
-.signup-button {
-    /* 회원가입 */
-
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 29px;
-    /* identical to box height */
-    text-transform: uppercase;
-    text-align: center;
-
-    color: #FFFFFF;
-
-
-}
-
-.signup-button:hover {
+.loginBtn:hover {
     background-color: #878a8d;
     /* 호버시 배경 색상 변경 */
 }

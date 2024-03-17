@@ -32,19 +32,20 @@
                     <img class="mypage" src="../static/img/mypage.svg">
                 </div>
             </div>
-            <!--여기에 수정하세요-->
-            <div class="login">
-                <p class="login-text">로그인</p>
+            <div class="loginSection">
+                <div class="login-text"><a>로그인</a></div>
+            </div>  
+            <div class="loginBox">
                 <form action="/login" method="post">
                     <label for="email"></label>
-                    <input type="email" id="email" name="user_id" placeholder=" 이메일 주소" required>
+                    <input type="email" id="email" class="loginInputField" name="email" placeholder=" 이메일 주소" required>
                     <label for="password"></label>
-                    <input type="password" id="password" name="pw" placeholder=" 비밀번호" required>
-
-                    <input type="submit" value="로그인">
+                    <input type="password" id="password" class="loginInputField" name="pw" placeholder=" 비밀번호" required>
+                    <input type="submit" class="loginBtn" value="로그인">
                 </form>
-                <button type="submit" class="signup-button" onclick="window.location.href='/create-account'">회원가입</button>
+                <button type="button" class="loginBtn" onclick="window.location.href='/create-account'">회원가입</button>
             </div>
+        </div>
 
         </div>
     </div>
