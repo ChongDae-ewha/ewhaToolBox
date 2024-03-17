@@ -56,8 +56,8 @@ def reg_user_submit():
 @bp.route("/user/card-veri", methods=["POST"])
 def card_veri():
     data=request.form
-    image_url=data['image_url']
-    name = verify(image_url)
+    image=data['image']
+    name = verify(image)
     # if (name == data['name']): return render_template("")
 
 @bp.route("/user/name-veri", methods=["POST"])
