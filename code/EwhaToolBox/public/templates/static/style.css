@@ -1403,3 +1403,38 @@
 }
 
 /*product-register.html 끝*/
+
+
+/* verify-card.html */
+
+.addCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 323px;
+    height: 40px;
+    padding: 0px 15px;
+
+    margin: auto;
+    margin-bottom: 10px;
+    
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.addCard-text{
+    display: inline-block;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    
+    margin: 0;
+}
+
+.bottombtn{
+    margin-top: 600px;
+}
