@@ -1,16 +1,11 @@
 {
   "hosting": {
-    "public": "./EwhaToolBox/public",
+    "public": "./EwhaToolBox/public/templates",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/templates/index.html"
-      }
     ]
+    
   }
 }

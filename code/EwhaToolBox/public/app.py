@@ -1,12 +1,15 @@
 import io
 import sys
 import json
+import pyrebase
 
 from flask import Flask,  render_template, jsonify, request, Blueprint, redirect, url_for
 from .db_handler import DBModule
 
 bp = Blueprint('main',__name__,url_prefix='/')
 DB = DBModule()
+
+
 
 
 #로그인 화면
@@ -18,11 +21,11 @@ def view_login():
 @bp.route("/user/signin", methods=['POST'])
 def signin():
     # POST 요청으로부터 사용자 정보 받아오기
-    user_id = request.form['user_id']
+    user_id = request.form['email']
     pwd = request.form['pwd']
 
     # DB_Module의 signin 메서드 호출하여 사용자 인증 처리
-    authenticated = DBModule.signin(user_id, pwd)
+    authenticated = DBModule.signin(email, pwd)
 
     if authenticated:
         return "Login successful", 200  # 로그인 성공 시 응답
@@ -38,16 +41,15 @@ def create_account():
     
 @bp.route("/user/signup/submit", methods=["POST"])
 def reg_user_submit():
-    user_id = request.form['user_id']
+    # user_id = request.form['user_id']
     data=request.form
 
-    success = DBModule.insert_user(user_id, data)
-
     # 회원가입 성공 여부에 따른 응답 반환
-    if success:
-        return 200
+    
+    if DB.insert_user(data):
+        return redirect("/")
     else:
-        return 500
+        return jsonify({"message": "회원가입 실패"}), 500
     
 
 @bp.route("/user/card-veri", methods=["POST"])
@@ -133,18 +135,20 @@ def insert_order():
     
 @bp.route("/product-register")
 def view_register():
+    print("product-register")
     return render_template("product-register.html")
 
 @bp.route("/product-register/submit", methods=["POST"])
 def insert_post():
     data = request.form
     if DB.insert_post(data):
-        return 200
+        return redirect("/")
     else:
-        return 500
+        return jsonify({"message": "제품등록 실패"}), 500
 
 @bp.route("/product-register/edit/<int:post_id>", methods=["GET", "POST"])
 def update_post(post_id):
+    post = DB.post_detail(post_id=post_id)
     data = request.form
     if DB.update_post(post_id, data):
         return 200

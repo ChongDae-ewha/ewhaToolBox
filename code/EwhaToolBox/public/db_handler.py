@@ -12,23 +12,26 @@ class DBModule:
     
     
     ## 사용자
-    def insert_user(self, user_id, data):
+    def insert_user(self, data):
         user = {
-            "user_id" : data['user_id'],
             "pw" : data['pw'],
             "nickname" : data['nickname'],
+            # "user_id" : data['user_id'],
             "email" : data['email'],
             "phone" : data['phone'],
-            "address" : data['address']
+            "address0" : data['address0'],
+            "address1" : data['address1'],
+            "address2" : data['address2'],
+            "address3" : data['address3'],
             }
-        self.db.child("user").child(user_id).set(user)
+        self.db.child("user").push(user)
         return True
     
    
-    def signin(self, user_id, pwd):
+    def signin(self, email, pwd):
         users = self.db.child("user").get()
         for user in users.each():
-            if user.key() == user_id:  # user_id를 문자열로 그대로 사용하여 비교
+            if user.val()['email'] == email:  # user_id를 문자열로 그대로 사용하여 비교
                 if user.val()['pw'] == pwd:
                     print("로그인 성공")
                     return True
