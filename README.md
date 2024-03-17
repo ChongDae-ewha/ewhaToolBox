@@ -16,7 +16,9 @@
 - **ERD**
  ![이화공구함-2](https://github.com/ChongDae-ewha/ewhaToolBox/assets/144606981/2ad1b16a-d0d6-4b70-8ea5-0664ada7ac21)
 
-- **API 명세서**
+- **API 명세서**  
+  <img width="646" alt="Screenshot 2024-03-17 at 3 51 37 PM" src="https://github.com/ChongDae-ewha/ewhaToolBox/assets/144606981/5ecfaab2-f1a5-49ab-b021-1c02da22f219">
+
   
 
 
