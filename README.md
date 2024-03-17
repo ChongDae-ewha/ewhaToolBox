@@ -13,9 +13,11 @@
 <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/flask-000000?style=for-the-badge&logo=flask&logoColor=white"> <img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
 
 
-- ERD
+- **ERD**
+ ![이화공구함-2](https://github.com/ChongDae-ewha/ewhaToolBox/assets/144606981/2ad1b16a-d0d6-4b70-8ea5-0664ada7ac21)
 
-- API 명세서
+- **API 명세서**
+  
 
 
 # AI
