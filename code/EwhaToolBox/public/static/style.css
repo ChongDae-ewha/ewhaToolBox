@@ -1,9 +1,29 @@
 /* 공통 CSS */
+
+*{
+    margin: 0;
+}
+
 .layoutWrap {
     display: flex;
     height: 100vh;
     -webkit-box-pack: center;
     justify-content: center;
+    background: #f9f9f9;
+}
+
+@font-face {
+    font-family: 'Makgeolli';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/Makgeolli.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@media screen and (min-width: 500px){
+.layoutRight {
+        width: 375px;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -13,16 +33,25 @@
         width: 385px;
         margin-right: 60px;
     }
+    .serviceName{
+        font-family: 'Makgeolli';
+        font-size: 100px;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        color:#025F2D;
+    }
 }
 
 .layoutLeft {
     display: none;
-    background-color: #333;
+    width: 385px;
 }
 
 .layoutRight {
-    position: absolute;
     width: 393px;
+    height: 100%;
+    background: #fff;
 }
 
 @font-face {
@@ -93,9 +122,7 @@
 .indexNav > li{
     display: block;
     float: left;
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 15px;
     line-height: 22px;
     align-items: center;
@@ -113,12 +140,12 @@
     border-bottom: solid 2px #17794A;
 }
 
-
 /* products ad container */
 .indexProductAdContainer{
     display: block;
     margin: auto;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     box-sizing: border-box;
     width: 370px;
     height: 300px;
@@ -160,13 +187,9 @@
     margin-top: 16px;
     margin-left: 16px;
 
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 14px;
     line-height: 20px;
-    display: flex;
-    align-items: center;
 
     color: #FFFFFF;
 }
@@ -176,9 +199,7 @@
     width: 332px;
     height: 34px;
     margin-left: 16px;
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     display: flex;
@@ -206,26 +227,19 @@
 
 .indexProductsListTitle{
     display: block;
-    margin: 10px;
+    margin: 5px 10px;
     width: 226px;
     height: 22px;
 
-    font-family: 'Noto Sans KR';
-    font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 22px;
-    /* identical to box height */
-    display: flex;
-    align-items: center;
-
-    color: #000000;
-
 }
 
 .ProductBox{
     display: flex;
     margin: auto;
+    margin-top: 10px;
     margin-bottom: 10px;
     width: 350px;
     height: 130px;
@@ -257,13 +271,9 @@
     width: 190px;
     height: 22px;
 
-    font-family: 'Noto Sans KR';
-    font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 17px;
-    display: flex;
-    align-items: center;
 
     color: #777777;
 }
@@ -272,8 +282,6 @@
 .Producttext{
     display: inline-block;
     margin: 5px 0px;
-    font-family: 'Noto Sans KR';
-    font-style: normal;
     font-weight: 500;
     font-size: 13px;
     line-height: 19px;
@@ -290,8 +298,6 @@
     width: 62px;
     height: 24px;
 
-    font-family: 'Noto Sans KR';
-    font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 22px;
@@ -305,8 +311,6 @@
     width: 42px;
     height: 23px;
 
-    font-family: 'Noto Sans KR';
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 17px;
@@ -319,8 +323,6 @@
     width: 118px;
     height: 16px;
 
-    font-family: 'Noto Sans KR';
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 17px;
@@ -337,6 +339,7 @@
     border-radius: 5px;
     overflow: hidden;
 }
+
 .progressbar{
     width: 130px;
     height: 5px;
@@ -363,8 +366,6 @@
 .mydesignOpenBtnText{
     display: flex;
     align-items: center;
-    font-family: 'Noto Sans KR';
-    font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 22px;
@@ -378,9 +379,8 @@
 .totalSold{
     width: 195px;
     height: 24px;
+    margin-top: 10px;
 
-    font-family: 'Noto Sans KR';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -394,15 +394,16 @@
     color: #17794A;
 }
 .opendesignOpenBtn{
+    display: block;
     width: 120px;
     height: 25px;
     float: right;
+
+    margin-top: 18px;
     
     background: #17794A;
     border-radius: 15px;
 
-    font-family: 'Noto Sans KR';
-    font-style: normal;
     font-weight: 500;
     font-size: 11px;
     line-height: 16px;
@@ -416,7 +417,6 @@
     align-items: center;
     margin: auto;
 }
-
 
 /* index.html 끝 */
 
