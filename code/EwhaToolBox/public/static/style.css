@@ -910,8 +910,9 @@
 .memberInputSection{
     display: block;
     margin: auto;
-    margin-top: 10px;
-    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    width: 90%;
     height: auto;
     padding: 5px 10px;
 
@@ -954,7 +955,7 @@
     height: 35px;
 
     background: #FFFFFF;
-    border: 1px solid #696969;
+    border: 1px solid #ddd;
     border-radius: 5px;
 
 }
@@ -973,7 +974,7 @@
 #sample6_address {
     width: 100%;
     background: #FFFFFF;
-    border: 1px solid #696969;
+    border: 1px solid #ddd;
     border-radius: 5px;
 }
 
@@ -983,7 +984,7 @@
     height: 35px;
 
     background: #FFFFFF;
-    border: 1px solid #696969;
+    border: 1px solid #ddd;
     border-radius: 5px;
 }
 
@@ -993,12 +994,11 @@
     height: 35px;
 
     background: #FFFFFF;
-    border: 1px solid #696969;
+    border: 1px solid #ddd;
     border-radius: 5px;
 }
 
 .authenticationBtns{
-    display: block;
     margin: auto;
     text-align: center;
     width: 90%;
@@ -1010,8 +1010,8 @@
     
     box-sizing: border-box;
 
-    width: 160px;
-    height: 60px;
+    width: 130px;
+    height: 50px;
 
     background: #17794A;
     border: 1px solid #17794A;
@@ -1019,8 +1019,8 @@
 
     font-family: 'Noto Sans KR';
     font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 29px;
     /* identical to box height */
     text-transform: uppercase;
