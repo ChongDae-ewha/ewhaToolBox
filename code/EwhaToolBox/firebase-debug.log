@@ -1,0 +1,38 @@
+[debug] [2024-03-17T04:16:47.315Z] ----------------------------------------------------------------------
+[debug] [2024-03-17T04:16:47.316Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2024-03-17T04:16:47.317Z] CLI Version:   13.1.0
+[debug] [2024-03-17T04:16:47.317Z] Platform:      darwin
+[debug] [2024-03-17T04:16:47.317Z] Node Version:  v20.11.0
+[debug] [2024-03-17T04:16:47.317Z] Time:          Sun Mar 17 2024 13:16:47 GMT+0900 (Korean Standard Time)
+[debug] [2024-03-17T04:16:47.317Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-17T04:16:47.373Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-17T04:16:47.373Z] > authorizing via signed-in user (sally99h@gmail.com)
+[debug] [2024-03-17T04:16:47.373Z] [iam] checking project test-4f2e1 for permissions ["firebase.projects.get"]
+[debug] [2024-03-17T04:16:47.374Z] > refreshing access token with scopes: []
+[debug] [2024-03-17T04:16:47.374Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-03-17T04:16:47.374Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-17T04:16:47.611Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-03-17T04:16:47.612Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-17T04:16:47.625Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/test-4f2e1:testIamPermissions [none]
+[debug] [2024-03-17T04:16:47.625Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/test-4f2e1:testIamPermissions x-goog-quota-user=projects/test-4f2e1
+[debug] [2024-03-17T04:16:47.625Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/test-4f2e1:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-03-17T04:16:48.538Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/test-4f2e1:testIamPermissions 200
+[debug] [2024-03-17T04:16:48.539Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/test-4f2e1:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-03-17T04:16:48.540Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/test-4f2e1 [none]
+[debug] [2024-03-17T04:16:49.050Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/test-4f2e1 200
+[debug] [2024-03-17T04:16:49.050Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/test-4f2e1 {"projectId":"test-4f2e1","projectNumber":"904831047115","displayName":"flask firebase ex","name":"projects/test-4f2e1","resources":{"hostingSite":"test-4f2e1","realtimeDatabaseInstance":"test-4f2e1-default-rtdb"},"state":"ACTIVE","etag":"1_16cab420-a836-4406-b3d1-937935f7e052"}
+[info] 
+[info] === Serving from '/Users/sean/Documents/mycode/ewhaToolBox/code'...
+[info] 
+[debug] [2024-03-17T04:16:49.055Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/test-4f2e1/sites 
+[debug] [2024-03-17T04:16:49.825Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/test-4f2e1/sites 200
+[debug] [2024-03-17T04:16:49.825Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/test-4f2e1/sites {"sites":[{"name":"projects/test-4f2e1/sites/test-4f2e1","defaultUrl":"https://test-4f2e1.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-03-17T04:16:49.826Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/test-4f2e1/webApps/-/config [none]
+[debug] [2024-03-17T04:16:50.481Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/test-4f2e1/webApps/-/config 200
+[debug] [2024-03-17T04:16:50.482Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/test-4f2e1/webApps/-/config {"projectId":"test-4f2e1","databaseURL":"https://test-4f2e1-default-rtdb.firebaseio.com","storageBucket":"test-4f2e1.appspot.com","apiKey":"AIzaSyBFUaaNfM7SwCcULPWcC19qrfpjEbdE49U","authDomain":"test-4f2e1.firebaseapp.com","messagingSenderId":"904831047115"}
+[debug] [2024-03-17T04:16:50.490Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/test-4f2e1 [none]
+[debug] [2024-03-17T04:16:50.777Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/test-4f2e1 200
+[debug] [2024-03-17T04:16:50.778Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/test-4f2e1 {"projectId":"test-4f2e1","projectNumber":"904831047115","displayName":"flask firebase ex","name":"projects/test-4f2e1","resources":{"hostingSite":"test-4f2e1","realtimeDatabaseInstance":"test-4f2e1-default-rtdb"},"state":"ACTIVE","etag":"1_16cab420-a836-4406-b3d1-937935f7e052"}
+[info] i  hosting[test-4f2e1]: Serving hosting files from: ./EwhaToolBox/public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1m./EwhaToolBox/public\u001b[22m"}}
+[info] ✔  hosting[test-4f2e1]: Local server: http://localhost:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5002\u001b[22m\u001b[24m"}}

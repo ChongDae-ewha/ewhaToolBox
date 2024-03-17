@@ -41,16 +41,15 @@ def create_account():
     
 @bp.route("/user/signup/submit", methods=["POST"])
 def reg_user_submit():
-    user_id = request.form['user_id']
+    # user_id = request.form['user_id']
     data=request.form
 
-    success = DBModule.insert_user(user_id, data)
-
     # 회원가입 성공 여부에 따른 응답 반환
-    if success:
-        return 200
+    
+    if DB.insert_user(data):
+        return redirect("/")
     else:
-        return 500
+        return jsonify({"message": "회원가입 실패"}), 500
     
 
 @bp.route("/user/card-veri", methods=["POST"])
@@ -145,7 +144,7 @@ def insert_post():
     if DB.insert_post(data):
         return redirect("/")
     else:
-        return jsonify({"message": "회원가입 실패"}), 500
+        return jsonify({"message": "제품등록 실패"}), 500
 
 @bp.route("/product-register/edit/<int:post_id>", methods=["GET", "POST"])
 def update_post(post_id):

@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "./EwhaToolBox/public",
+    "public": "./EwhaToolBox/public/templates",
     "ignore": [
       "firebase.json",
       "**/.*",

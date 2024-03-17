@@ -12,7 +12,7 @@ class DBModule:
     
     
     ## 사용자
-    def insert_user(self, user_id, data):
+    def insert_user(self, data):
         user = {
             "user_id" : data['user_id'],
             "pw" : data['pw'],
@@ -24,7 +24,7 @@ class DBModule:
             "address2" : data['address2'],
             "address3" : data['address3'],
             }
-        self.db.child("user").child(user_id).set(user)
+        self.db.child("user").push(user)
         return True
     
    
