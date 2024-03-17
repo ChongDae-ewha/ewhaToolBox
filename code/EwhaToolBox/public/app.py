@@ -21,11 +21,11 @@ def view_login():
 @bp.route("/user/signin", methods=['POST'])
 def signin():
     # POST 요청으로부터 사용자 정보 받아오기
-    user_id = request.form['user_id']
+    user_id = request.form['email']
     pwd = request.form['pwd']
 
     # DB_Module의 signin 메서드 호출하여 사용자 인증 처리
-    authenticated = DBModule.signin(user_id, pwd)
+    authenticated = DBModule.signin(email, pwd)
 
     if authenticated:
         return "Login successful", 200  # 로그인 성공 시 응답
