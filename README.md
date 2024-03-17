@@ -91,6 +91,7 @@
 
 # AI
 <img width="192" alt="1_NIJb0RLUPyucJo_Z9yTPrAd" src="https://github.com/ChongDae-ewha/ewhaToolBox/assets/112560299/1912e208-a4c1-4c64-86d5-04058b8cae4d">
+<img width="108" alt="1_NIJb0RLUPyucJo_Z9yTPrAd" src="https://github.com/ChongDae-ewha/ewhaToolBox/assets/112560299/a66dfd0b-9c35-4c2d-bd59-9cb08ebac6af">
 
 
 
