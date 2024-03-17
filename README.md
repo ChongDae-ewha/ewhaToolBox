@@ -106,7 +106,7 @@
 - EasyOCR에서 제공하는 오픈 소스를 사용해 글자 인식
 - 카드에 적힌 학생 이름 영역을 입력 받아 글자를 읽어들여 글자를 반환
 
-data: card_train, old_card_train, new_card_train
+사용 데이터: card_train, old_card_train, new_card_train
 
 
 
